@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>facebook</title>
+    <defs>
+        <path d="M10.01875,20.7083333 L10.01875,12.9266667 L7.4125,12.9266667 L7.4125,9.83333333 L10.01875,9.83333333 L10.01875,7.39791667 C10.01875,4.75083333 11.63625,3.31041667 13.9979167,3.31041667 C15.1295833,3.31041667 16.10125,3.39375 16.3833333,3.4325 L16.3833333,6.19875 L14.7454167,6.19875 C13.46125,6.19875 13.2129167,6.81041667 13.2129167,7.70375 L13.2129167,9.83333333 L16.1116667,9.83333333 L15.7141667,12.9254167 L13.2141667,12.9254167 L13.2141667,20.7083333" id="path-1"></path>
+    </defs>
+    <g id="facebook" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Path" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Visit Korea</title>
+		<meta name="description" content="A draggable menu that shows a thumbnail preview of an image grid" />
+		<meta name="keywords" content="draggable, menu, navigation, thumbnails, grid, javascript, gsap, web design, layout" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/crf4rue.css">
+		
+		<link rel="stylesheet" type="text/css" href="../libs/styles/draft.css" />
+		<link rel="stylesheet" type="text/css" href="css/keyword.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="loading">
+		
+		<main>
+			
+			<div class="page page--preview">
+				
+				<div class="grid-wrap">
+					<div class="grid grid--layout-1">
+						<div class="grid__item-wrap">
+							<div class="grid__item" style="background-image: url(img/1.jpg)">
+								<div class="item-inner-wrap">
+									<a href="./a_basic.html"></a>
+								</div>
+							</div>
+						</div>
+						<div class="grid__item-wrap">
+							<div class="grid__item" style="background-image: url(img/2.jpg)">
+								<div class="item-inner-wrap"></div>
+							</div>
+						</div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/3.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/4.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/5.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/6.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/7.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/8.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/9.jpg)"></div></div>
+					</div>
+					<div class="grid grid--layout-2">
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/10.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/11.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/12.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/13.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/14.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/15.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/16.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/17.jpg)"></div></div>
+					</div>
+					<div class="grid grid--layout-3">
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/18.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/19.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/20.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/21.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/22.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/23.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/24.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/42.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/43.jpg)"></div></div>
+					</div>
+					<div class="grid grid--layout-4">
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/25.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/26.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/27.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/28.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/29.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/30.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/31.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/32.jpg)"></div></div>
+					</div>
+					<div class="grid grid--layout-5">
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/33.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/34.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/35.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/36.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/37.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/38.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/39.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/40.jpg)"></div></div>
+						<div class="grid__item-wrap"><div class="grid__item" style="background-image: url(img/41.jpg)"></div></div>
+					</div>
+					<button class="gridback"><svg width="27px" height="15px" viewBox="0 0 27 15"><path d="M1.469 6.75l-.719.719 7.938 6.937.718-.719L1.47 6.75zM8.594.531L.75 7.375l.688.688L9.28 1.218 8.594.53zM1.406 6.938v1h24.75v-1H1.406z" fill="#de6565"/></svg></button>
+				</div><!-- /grid-wrap -->
+			</div><!-- /page -->
+			<div class="menu-wrap">
+				<div class="menu-draggable"></div>
+				<nav class="menu">
+					<div class="menu__item">
+						<a class="menu__item-link">K-Style</a>
+						<a class="menu__item-explore">explore</a>
+					</div>
+					<div class="menu__item">
+						<a class="menu__item-link">K-POP</a>
+						<a class="menu__item-explore">explore</a>
+					</div>
+					<div class="menu__item">
+						<a class="menu__item-link">Festival</a>
+						<a class="menu__item-explore">explore</a>
+					</div>
+					<div class="menu__item">
+						<a class="menu__item-link">Hanbok</a>
+						<a class="menu__item-explore">explore</a>
+					</div>
+					<div class="menu__item">
+						<a class="menu__item-link">Trecking</a>
+						<a class="menu__item-explore">explore</a>
+					</div>
+				</nav><!--menu-->
+			</div><!--/menu-wrap-->
+		</main>
+		<div class="cursor">
+			<div class="cursor__inner cursor__inner--circle">
+				<div class="cursor__side cursor__side--left"></div>
+				<div class="cursor__side cursor__side--right"></div>
+			</div>
+		</div>
+
+		<div class="header-wrap">
+            <header>
+                <div class="logo-wrap">
+					<a href="./a_home.html"></a>
+				</div>
+                <nav class="gnb-menu-wrap">
+                    <a href="#" class="gnb-menu">Destinations</a>
+                    <a href="#" class="gnb-menu">Experiences</a>
+                    <a href="#" class="gnb-menu">Travel</a>                  
+                </nav>
+                <div class="menu-wrap">
+                    <a href="" class="search-wrap">
+                        <svg width="56px" height="56px" viewBox="0 0 56 56">                            
+                            <path d="M28.127417,9.83452378 C35.3071187,9.83452378 41.127417,15.654822 41.127417,22.8345238 C41.127417,29.5068599 36.1006556,35.0051331 29.6275739,35.7489022 L29.627417,44.9203102 C29.627417,45.7487373 28.9558441,46.4203102 28.127417,46.4203102 C27.3477209,46.4203102 26.7069683,45.8254221 26.6342836,45.0647702 L26.627417,44.9203102 L26.6282552,35.7490165 C20.1546935,35.0056965 15.127417,29.5072018 15.127417,22.8345238 C15.127417,15.654822 20.9477153,9.83452378 28.127417,9.83452378 Z M28.127417,12.8345238 C22.6045695,12.8345238 18.127417,17.3116763 18.127417,22.8345238 C18.127417,28.3573713 22.6045695,32.8345238 28.127417,32.8345238 C33.6502645,32.8345238 38.127417,28.3573713 38.127417,22.8345238 C38.127417,17.3116763 33.6502645,12.8345238 28.127417,12.8345238 Z" fill-rule="nonzero" transform="translate(28.127417, 28.127417) rotate(-45.000000) translate(-28.127417, -28.127417) "></path>                            
+                        </svg>
+                    </a>
+                    <a href="" class="burger-wrap">
+                        <div class="burger-click-region closing">
+                            <span class="burger-menu-piece"></span>
+                            <span class="burger-menu-piece"></span>
+                            <span class="burger-menu-piece"></span>
+                        </div>
+                    </a>
+                </div>
+            </header>
+        </div>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/draggabilly.pkgd.min.js"></script>
+		<script src="../libs/jquery/jquery-3.4.1.min.js"></script>
+		<script src="js/demo.js"></script>
+		<script>
+			
+		</script>
+	</body>
+</html>
