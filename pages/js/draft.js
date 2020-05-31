@@ -13,10 +13,20 @@ for (var i = 0; i < acc.length; i++) {
   });
 }
 
-  var burgerBtn = $('.burger-wrap');
-  burgerBtn.on('click', function(){
-    event.preventDefault();
-    $('.burger-click-region').toggleClass(function(){
-      return $('.burger-click-region').is('.active') ? 'closing' : 'active'
-    });
+var burgerBtn = $('.burger-wrap');
+burgerBtn.on('click', function(){
+  event.preventDefault();
+  $('.burger-click-region').toggleClass(function(){
+    return $('.burger-click-region').is('.active') ? 'closing' : 'active'
   });
+});
+
+$(document).on('scroll', function(){
+  if ($(document).scrollTop() > 80){
+      $('.header-wrap').removeClass('home');
+      $('.header-wrap').addClass('white-back');
+  }else{
+      $('.header-wrap').addClass('home');
+      $('.header-wrap').removeClass('white-back');
+  }
+});

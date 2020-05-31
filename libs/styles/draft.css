@@ -177,7 +177,7 @@
 }
 
 .header-wrap {
-  position: relative;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,11 +186,15 @@
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  height: 78px;
+  height: 72px;
   top: 0;
   left: 0;
   background-color: white;
   z-index: 100000;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0) 100%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header-wrap header {
@@ -203,7 +207,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  height: 78px;
+  height: 72px;
   top: 0;
   left: 0;
 }
@@ -213,7 +217,7 @@
   width: 169px;
   height: 33px;
   left: 24px;
-  top: 22px;
+  top: 20px;
   background-repeat: no-repeat;
   background-size: 169px 33px;
   background-image: url(../../img/common/logo_a.png);
@@ -239,19 +243,18 @@
 
 .header-wrap .gnb-menu-wrap .gnb-menu {
   position: relative;
-  padding: 0 24px;
-  line-height: 78px;
+  padding: 0 20px;
+  line-height: 72px;
   cursor: pointer;
   float: left;
   font-family: 'Poppins';
-  color: #000;
   font-weight: bold;
+  color: #000;
   text-transform: uppercase;
 }
 
 .header-wrap .gnb-menu-wrap .gnb-menu:hover, .header-wrap .gnb-menu-wrap .gnb-menu:focus-within {
   color: #000;
-  cursor: pointer;
 }
 
 .header-wrap .menu-wrap {
@@ -281,28 +284,36 @@
   height: 30px;
   margin: auto;
   right: 0;
-  top: 26px;
+  top: 24px;
 }
 
-.header-wrap .nav-submenu {
-  visibility: hidden;
-  opacity: 0;
-  min-width: 4rem;
-  position: absolute;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  margin-top: -1px;
-  left: 0;
-  display: none;
-  width: 200px;
+.header-wrap.home {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.header-wrap.home .logo-wrap {
+  background-image: url(../../img/common/logo_a_nega.png);
+}
+
+.header-wrap.home .gnb-menu-wrap .gnb-menu {
+  color: #fff;
+}
+
+.header-wrap.home .gnb-menu-wrap .gnb-menu:hover, .header-wrap.home .gnb-menu-wrap .gnb-menu:focus-within {
+  color: #fff;
+}
+
+.header-wrap.home .menu-wrap .search-wrap svg path {
+  fill: #fff;
+}
+
+.header-wrap.home .menu-wrap .burger-click-region .burger-menu-piece {
+  border-top: 3px solid #fff;
+}
+
+.header-wrap.white-back {
+  background: none;
   background-color: #fff;
-  border: 1px solid #ccc;
-  border-top: 0px solid white;
-}
-
-.header-wrap .nav-submenu span {
-  display: block;
-  height: 1rem;
 }
 
 body {
@@ -337,7 +348,7 @@ button {
 .full-video-wrap {
   position: relative;
   width: 100%;
-  height: calc(100vh - 78px);
+  height: calc(100vh - 72px);
   overflow: hidden;
 }
 
@@ -380,7 +391,7 @@ button {
 .full-hero-wrap {
   position: relative;
   width: 100%;
-  height: calc(100vh - 78px);
+  height: calc(100vh - 72px);
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center;
@@ -523,48 +534,65 @@ button {
   background-color: #161D20;
 }
 
-.hero-container {
-  position: relative;
+.banner-outer {
+  position: absolute;
   width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.banner-outer .banner-wrap {
+  position: absolute;
+  width: 260px;
+  height: 520px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.hero-container .home-right {
-  position: absolute;
-  width: 25%;
-  height: 100%;
-  right: 0;
-}
-
-.hero-container .home-right .block-1, .hero-container .home-right .block-2 {
+.banner-outer .banner-wrap .banner-1, .banner-outer .banner-wrap .banner-2 {
   position: relative;
   width: 100%;
   height: 50%;
-  overflow: hidden;
 }
 
-.hero-container .home-right .block-1 a, .hero-container .home-right .block-2 a {
+.banner-outer .banner-wrap .banner-1 a, .banner-outer .banner-wrap .banner-2 a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-position: center center;
-  background-size: cover;
+}
+
+.banner-outer .banner-wrap .banner-1 {
+  background-color: rgba(0, 0, 0, 0.85);
+  background-position: center;
   background-repeat: no-repeat;
-}
-
-.hero-container .home-right .block-1 {
-  background-color: #191A1B;
-}
-
-.hero-container .home-right .block-1 a {
-  background-image: url(../../img/home/keyword_back.png);
   background-size: 60%;
+  background-image: url(../../img/home/keyword_back.png);
 }
 
-.hero-container .home-right .block-2 {
-  background-color: #582A6F;
+.banner-outer .banner-wrap .banner-2 {
+  background-color: #BD1736;
+}
+
+.hero-overlay {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9990;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .chosen-wrap {
