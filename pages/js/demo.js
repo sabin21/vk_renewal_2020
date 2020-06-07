@@ -752,23 +752,24 @@
     /****** Custom cursor related ******/
 
     // Activate the enter/leave/click methods of the custom cursor when hovering in/out on every <a> and the back to menu ctrl
+    
     [...document.querySelectorAll('a'), document.querySelector('button')].forEach((link) => {
         link.addEventListener('mouseenter', () => cursor.enter());
         link.addEventListener('mouseleave', () => cursor.leave());
     });
-
+    
     /***********************************/
     const cardCon = document.querySelector('.item-inner-wrap');
-
+    /*
         cardCon.addEventListener('mouseenter', () => {
-            //$('.item-inner-wrap').css('opacity', '1');
+            $('.item-inner-wrap').css('opacity', '1');
             console.log('EIEIEIE');
         });
-
-    /*
-    [document.cardCon].forEach(() => {
+    
+    
+    [cardCon].forEach(() => {
         cardCon.addEventListener('mouseenter', () => {
-            //$('.item-inner-wrap').css('opacity', '1');
+            $(this).find('.item-inner-wrap').css('opacity', '1');
             console.log('EIEIEIE');
         });
     });

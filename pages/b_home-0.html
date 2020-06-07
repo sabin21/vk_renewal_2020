@@ -8,16 +8,21 @@
     <link rel="stylesheet" href="../libs/styles/common.css">
     <link rel="stylesheet" href="../libs/styles/draft_b.css">
 
+    <!--
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    -->
 
 </head>
 
 <body class="home">
     
-<div class="wrap"  x-data="{ isOpen: false }">
-    <div class="filter-wrap" x-show="isOpen">
-        <div class="filter-btn-close" @click="isOpen = false">
+<div class="wrap">
+    <div class="filter-wrap">
+        <div class="filter-btn-close">
             <img src="../img/b_filter_close.png">
+        </div>
+        <div class="filter-title">
+            <p>Filter</p>
         </div>
         <div class="filter-inner">
             <img src="../img/b_filter.png" class="con-img">
@@ -195,7 +200,7 @@
 
         <div class="slider-frame">
             <div class="slider-title-wrap">
-                <p>Travel Highlights</p>
+                <p>Today Hot Tours</p>
                 <a href="" class="btn-more">
                     <svg width="20px" height="20px" viewBox="0 0 20 20">                        
                         <polyline id="Path" stroke="#A0A5A8" stroke-width="2" fill="none" transform="translate(10.500000, 10.000000) rotate(90.000000) translate(-10.500000, -10.000000) " points="3.5 13.5 10.5 6.5 17.5 13.5"></polyline>                        
@@ -377,9 +382,9 @@
             </div>                        
         </div><!-- news frame end -->
 
-        <div class="full-section"></div>
-
-        
+        <div class="full-section theme-wrap">
+            <div class="theme-front"></div>
+        </div>
 
         <div class="slider-frame">
             <div class="slider-title-wrap">
@@ -529,6 +534,239 @@
                 </div>               
             </div>
         </div><!-- slider frame end -->
+
+        <span class="slider-divider"></span>
+
+        <div class="slider-frame">
+            <div class="slider-title-wrap">
+                <p>Recommanded Tours</p>
+                <a href="" class="btn-more">
+                    <svg width="20px" height="20px" viewBox="0 0 20 20">                        
+                        <polyline id="Path" stroke="#A0A5A8" stroke-width="2" fill="none" transform="translate(10.500000, 10.000000) rotate(90.000000) translate(-10.500000, -10.000000) " points="3.5 13.5 10.5 6.5 17.5 13.5"></polyline>                        
+                    </svg>
+                </a>
+            </div>
+            <div class="btn prev">
+                
+            </div>
+            <div class="btn next">
+                
+            </div>
+            <div class="slider-container">
+                <div class="slide">
+                    <div class="slide-inner">
+                        <div class="thumb" id="columb-thumb-01">
+                            <div class="card-detail-wrap">
+                                <div class="card-btn"></div>
+                            </div>
+                        </div>
+                        <div class="card-title-wrap">
+                            <img src="../img/column_title_01.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-inner">
+                        <div class="thumb" id="columb-thumb-02">
+                            <div class="card-detail-wrap">
+                                <div class="card-btn"></div>
+                            </div>
+                        </div>
+                        <div class="card-title-wrap">
+                            <img src="../img/column_title_02.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-inner">
+                        <div class="thumb" id="columb-thumb-03">
+                            <div class="card-detail-wrap">
+                                <div class="card-btn"></div>
+                            </div>
+                        </div>
+                        <div class="card-title-wrap">
+                            <img src="../img/column_title_03.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-inner">
+                        <div class="thumb" id="columb-thumb-04">
+                            <div class="card-detail-wrap">
+                                <div class="card-btn"></div>
+                            </div>
+                        </div>
+                        <div class="card-title-wrap">
+                            <img src="../img/column_title_04.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-inner">
+                        <div class="thumb" id="columb-thumb-05">
+                            <div class="card-detail-wrap">
+                                <div class="card-btn"></div>
+                            </div>
+                        </div>
+                        <div class="card-title-wrap">
+                            <img src="../img/column_title_05.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-inner">
+                        <div class="thumb" id="columb-thumb-06">
+                            <div class="card-detail-wrap">
+                                <div class="card-btn"></div>
+                            </div>
+                        </div>
+                        <div class="card-title-wrap">
+                            <img src="../img/column_title_04.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-inner">
+                        <div class="thumb" id="columb-thumb-07">
+                            <div class="card-detail-wrap">
+                                <div class="card-btn"></div>
+                            </div>
+                        </div>
+                        <div class="card-title-wrap">
+                            <img src="../img/column_title_04.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-inner">
+                        <div class="thumb" id="columb-thumb-08">
+                            <div class="card-detail-wrap">
+                                <div class="card-btn"></div>
+                            </div>
+                        </div>
+                        <div class="card-title-wrap">
+                            <img src="../img/column_title_04.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-inner">
+                        <div class="thumb" id="columb-thumb-09">
+                            <div class="card-detail-wrap">
+                                <div class="card-btn"></div>
+                            </div>
+                        </div>
+                        <div class="card-title-wrap">
+                            <img src="../img/column_title_04.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-inner">
+                        <div class="thumb" id="columb-thumb-01">
+                            <div class="card-detail-wrap">
+                                <div class="card-btn"></div>
+                            </div>
+                        </div>
+                        <div class="card-title-wrap">
+                            <img src="../img/column_title_04.png">
+                        </div>
+                    </div>
+                </div>               
+            </div>
+        </div><!-- slider frame end -->
+
+        <span class="slider-divider"></span>
+
+        <div class="slider-frame">
+            <div class="slider-title-wrap">
+                <p>Travel infomation</p>
+                <a href="" class="btn-more">
+                    <svg width="20px" height="20px" viewBox="0 0 20 20">                        
+                        <polyline id="Path" stroke="#A0A5A8" stroke-width="2" fill="none" transform="translate(10.500000, 10.000000) rotate(90.000000) translate(-10.500000, -10.000000) " points="3.5 13.5 10.5 6.5 17.5 13.5"></polyline>                        
+                    </svg>
+                </a>
+            </div>
+            <div class="btn prev">
+                
+            </div>
+            <div class="btn next">
+                
+            </div>
+            <div class="slider-container">
+                <div class="slide info">
+                    <div class="slide-inner">
+                        <div class="thumb" id="info-thumb-01">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slide info">
+                    <div class="slide-inner">
+                        <div class="thumb" id="info-thumb-01">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slide info">
+                    <div class="slide-inner">
+                        <div class="thumb" id="info-thumb-01">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slide info">
+                    <div class="slide-inner">
+                        <div class="thumb" id="info-thumb-01">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slide info">
+                    <div class="slide-inner">
+                        <div class="thumb" id="info-thumb-01">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slide info">
+                    <div class="slide-inner">
+                        <div class="thumb" id="info-thumb-01">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slide info">
+                    <div class="slide-inner">
+                        <div class="thumb" id="info-thumb-01">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slide info">
+                    <div class="slide-inner">
+                        <div class="thumb" id="info-thumb-01">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slide info">
+                    <div class="slide-inner">
+                        <div class="thumb" id="info-thumb-01">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slide info">
+                    <div class="slide-inner">
+                        <div class="thumb" id="info-thumb-01">
+                            
+                        </div>
+                    </div>
+                </div>              
+            </div>
+        </div><!-- slider frame end -->
+
     </section>
 
 </div>

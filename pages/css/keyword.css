@@ -328,20 +328,23 @@ a:hover, a:focus {
   background-size: cover;
   will-change: transform;
   color: #fff;
-  cursor: pointer;
-  pointer-events: auto;
+  pointer-events: initial;
+}
+
+.grid__item:hover .item-inner-wrap {
+  opacity: 1;
 }
 
 .grid__item .item-inner-wrap {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: black;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
   font-size: 20px;
   -webkit-transition: 0.3s opacity;
   transition: 0.3s opacity;
+  opacity: 0;
 }
 
 .grid__item .item-inner-wrap a {
@@ -350,6 +353,46 @@ a:hover, a:focus {
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.grid__item .item-inner-wrap .item-text-wrap {
+  padding: 1rem;
+}
+
+.grid__item .item-inner-wrap .item-text-wrap .item-category {
+  text-align: center;
+  font-size: 14px;
+}
+
+.grid__item .item-inner-wrap .item-text-wrap .item-title {
+  text-align: center;
+  font-size: 18px;
+  font-family: "IBM Plex serif";
+  line-height: 1.2em;
+}
+
+.grid__item .item-inner-wrap .item-text-wrap .item-title.big {
+  font-size: 32px;
+  padding-top: 4rem;
+}
+
+.grid__item .item-inner-wrap .item-text-wrap .item-title.big-long {
+  font-size: 32px;
+  padding-top: 6rem;
+}
+
+.grid__item .item-inner-wrap .item-text-wrap .more {
+  text-align: center;
+  position: absolute;
+  margin: 0 auto;
+  width: 120px;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+  font-size: 14px;
+  line-height: 32px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Layout 1 */
@@ -759,7 +802,7 @@ a:hover, a:focus {
 }
 
 .header-wrap {
-  position: absolute;
+  position: fixed;
   background-color: transparent;
 }
 
