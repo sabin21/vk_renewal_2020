@@ -14,6 +14,17 @@ button, input {
 }
 button { cursor: pointer;}
 .wrap { position: relative; width:100%; }
+#footer {
+        position: relative; width:100%; height: 380px;
+        border-top:1px solid #3F4042; line-height: 0; text-align: center;
+        background-color: #292A2B;
+        .banner {
+          width:100%; text-align: center;
+          border-bottom:1px solid #3F4042;
+          img{ width: 1168px; margin: 20px 0; }  
+        }
+        .footer-content { width: 1170px; margin-top: 2rem; }
+    }
 
 //----------------
 
@@ -100,7 +111,10 @@ button { cursor: pointer;}
 }
 //-----------------
 .contents-wrap{
-    position: absolute; width: 100%; z-index: 5; top: 620px; min-height: 200vh;
+    position: absolute; width: 100%; z-index: 5; top: 620px; 
+}
+.contents-wrap2{
+    position: relative; width: 100%; z-index: 5; top: 920px; 
 }
 .slider-title-wrap {
     width:100%; height: 20px; margin-top:10px; padding:0; display: flex; 
@@ -159,15 +173,15 @@ button { cursor: pointer;}
                             background-image: url(../../img/basic_a/card_share.png);
                         }
                     }
-                    &#columb-thumb-01 { background-image: url(../../img/column_thumb_01.png); }
-                    &#columb-thumb-02 { background-image: url(../../img/column_thumb_02.png); }
-                    &#columb-thumb-03 { background-image: url(../../img/column_thumb_03.png); }
-                    &#columb-thumb-04 { background-image: url(../../img/column_thumb_04.png); }
-                    &#columb-thumb-05 { background-image: url(../../img/column_thumb_05.png); }
-                    &#columb-thumb-06 { background-image: url(../../img/column_thumb_06.png); }
-                    &#columb-thumb-07 { background-image: url(../../img/column_thumb_07.png); }
-                    &#columb-thumb-08 { background-image: url(../../img/column_thumb_08.png); }
-                    &#columb-thumb-09 { background-image: url(../../img/column_thumb_09.png); }
+                    &#column-thumb-01 { background-image: url(../../img/column_thumb_01.png); }
+                    &#column-thumb-02 { background-image: url(../../img/column_thumb_02.png); }
+                    &#column-thumb-03 { background-image: url(../../img/column_thumb_03.png); }
+                    &#column-thumb-04 { background-image: url(../../img/column_thumb_04.png); }
+                    &#column-thumb-05 { background-image: url(../../img/column_thumb_05.png); }
+                    &#column-thumb-06 { background-image: url(../../img/column_thumb_06.png); }
+                    &#column-thumb-07 { background-image: url(../../img/column_thumb_07.png); }
+                    &#column-thumb-08 { background-image: url(../../img/column_thumb_08.png); }
+                    &#column-thumb-09 { background-image: url(../../img/column_thumb_09.png); }
                     .card-ranking {
                         position: absolute; width:70px; height: 70px; @include backImageCover;
                         top:0; left:0;
@@ -184,6 +198,7 @@ button { cursor: pointer;}
                     }
                     
                     &#info-thumb-01 { background-image: url(../../img/card_info_01.png); }
+                    &#promo-thumb-01 { background-image: url(../../img/b_promo_1.png); }
                 }
                 .card-title-wrap{
                     position: relative; width:100%; transform-origin: 0% 0%; 
@@ -199,7 +214,7 @@ button { cursor: pointer;}
             &.info { 
                 .slide-inner{
                     .thumb {
-                        padding-top: 70%;
+                        padding-top: 75%;
                     }
                 }
             }

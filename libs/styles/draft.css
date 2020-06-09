@@ -343,8 +343,26 @@ button {
 #footer {
   position: relative;
   width: 100%;
-  min-height: 400px;
+  min-height: 380px;
   border-top: 1px solid #D9DBE0;
+  line-height: 0;
+  text-align: center;
+}
+
+#footer .banner {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #D9DBE0;
+}
+
+#footer .banner img {
+  width: 1168px;
+  margin: 20px 0;
+}
+
+#footer .footer-content {
+  width: 1170px;
+  margin-top: 2rem;
 }
 
 .full-video-wrap {

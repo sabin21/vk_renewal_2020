@@ -23,6 +23,32 @@ button {
   width: 100%;
 }
 
+#footer {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  border-top: 1px solid #3F4042;
+  line-height: 0;
+  text-align: center;
+  background-color: #292A2B;
+}
+
+#footer .banner {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #3F4042;
+}
+
+#footer .banner img {
+  width: 1168px;
+  margin: 20px 0;
+}
+
+#footer .footer-content {
+  width: 1170px;
+  margin-top: 2rem;
+}
+
 .header-wrap {
   position: fixed;
   width: 100%;
@@ -227,7 +253,13 @@ button {
   width: 100%;
   z-index: 5;
   top: 620px;
-  min-height: 200vh;
+}
+
+.contents-wrap2 {
+  position: relative;
+  width: 100%;
+  z-index: 5;
+  top: 920px;
 }
 
 .slider-title-wrap {
@@ -374,39 +406,39 @@ button {
   background-image: url(../../img/basic_a/card_share.png);
 }
 
-.slider-frame .slider-container .slide .slide-inner .thumb#columb-thumb-01 {
+.slider-frame .slider-container .slide .slide-inner .thumb#column-thumb-01 {
   background-image: url(../../img/column_thumb_01.png);
 }
 
-.slider-frame .slider-container .slide .slide-inner .thumb#columb-thumb-02 {
+.slider-frame .slider-container .slide .slide-inner .thumb#column-thumb-02 {
   background-image: url(../../img/column_thumb_02.png);
 }
 
-.slider-frame .slider-container .slide .slide-inner .thumb#columb-thumb-03 {
+.slider-frame .slider-container .slide .slide-inner .thumb#column-thumb-03 {
   background-image: url(../../img/column_thumb_03.png);
 }
 
-.slider-frame .slider-container .slide .slide-inner .thumb#columb-thumb-04 {
+.slider-frame .slider-container .slide .slide-inner .thumb#column-thumb-04 {
   background-image: url(../../img/column_thumb_04.png);
 }
 
-.slider-frame .slider-container .slide .slide-inner .thumb#columb-thumb-05 {
+.slider-frame .slider-container .slide .slide-inner .thumb#column-thumb-05 {
   background-image: url(../../img/column_thumb_05.png);
 }
 
-.slider-frame .slider-container .slide .slide-inner .thumb#columb-thumb-06 {
+.slider-frame .slider-container .slide .slide-inner .thumb#column-thumb-06 {
   background-image: url(../../img/column_thumb_06.png);
 }
 
-.slider-frame .slider-container .slide .slide-inner .thumb#columb-thumb-07 {
+.slider-frame .slider-container .slide .slide-inner .thumb#column-thumb-07 {
   background-image: url(../../img/column_thumb_07.png);
 }
 
-.slider-frame .slider-container .slide .slide-inner .thumb#columb-thumb-08 {
+.slider-frame .slider-container .slide .slide-inner .thumb#column-thumb-08 {
   background-image: url(../../img/column_thumb_08.png);
 }
 
-.slider-frame .slider-container .slide .slide-inner .thumb#columb-thumb-09 {
+.slider-frame .slider-container .slide .slide-inner .thumb#column-thumb-09 {
   background-image: url(../../img/column_thumb_09.png);
 }
 
@@ -465,6 +497,10 @@ button {
   background-image: url(../../img/card_info_01.png);
 }
 
+.slider-frame .slider-container .slide .slide-inner .thumb#promo-thumb-01 {
+  background-image: url(../../img/b_promo_1.png);
+}
+
 .slider-frame .slider-container .slide .slide-inner .card-title-wrap {
   position: relative;
   width: 100%;
@@ -493,7 +529,7 @@ button {
 }
 
 .slider-frame .slider-container .slide.info .slide-inner .thumb {
-  padding-top: 70%;
+  padding-top: 75%;
 }
 
 .slider-divider {
