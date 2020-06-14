@@ -646,12 +646,27 @@ button {
 
 @media all and (max-width: 480px) {
   .banner-outer {
-    height: 300px;
+    height: 336px;
     top: 100vh;
   }
   .banner-outer .banner-wrap {
-    width: 100vw;
-    height: 300px;
+    width: 350px;
+    height: 336px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: 15px;
+  }
+  .banner-outer .banner-wrap .banner-1 {
+    background-color: #1c1c1c;
+    background-size: 32%;
+    background-position: 40px 50%;
+  }
+  .banner-outer .banner-wrap .banner-2 {
+    background-color: #fff;
+    background-image: url(../../img/a_mobile/home_news.png);
+    background-size: 78%;
+    background-position: 30px 50%;
   }
 }
 
