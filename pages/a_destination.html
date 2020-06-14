@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visit Korea</title>
-
+    <link rel="stylesheet" href="../libs/owl_carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="../libs/owl_carousel/assets/owl.theme.default.css">
     <link href="../libs/styles/common.css" rel="stylesheet">
     <link href="../libs/styles/draft.css" rel="stylesheet">
 
@@ -12,13 +13,16 @@
 
 <body>
     <div class="wrap">
-        <div class="header-wrap">
+        <div class="header-wrap home">
             <header>
-                <div class="logo-wrap"></div>
+                <div class="logo-wrap">
+                    <a href="./a_home.html"></a>
+                </div>
                 <nav class="gnb-menu-wrap">
                     <a href="#" class="gnb-menu">Destinations</a>
                     <a href="#" class="gnb-menu">Experiences</a>
-                    <a href="#" class="gnb-menu">Travel</a>                  
+                    <a href="#" class="gnb-menu">Plan Your Trip</a>
+                    <a href="#" class="gnb-menu">Trip Packages</a>                   
                 </nav>
                 <div class="menu-wrap">
                     <a href="" class="search-wrap">
@@ -27,7 +31,7 @@
                         </svg>
                     </a>
                     <a href="" class="burger-wrap">
-                        <div class="burger-click-region closing">
+                        <div class="burger-click-region">
                             <span class="burger-menu-piece"></span>
                             <span class="burger-menu-piece"></span>
                             <span class="burger-menu-piece"></span>
@@ -38,11 +42,11 @@
         </div>
     <div class="full-video-wrap">
         <video src="../video/drone_jellobuk.mp4" class="full-video" muted autoplay loop></video>
-        <span class="video-overlay"></span>
-        <div class="title-wrap">
+        <span class="video-overlay region"></span>
+        <div class="title-wrap region">
             <p class="category-title">Destinations</p>
             <h1 class="big-1">Jeollabuk-do</h1>
-            <div class="share-wrap">
+            <div class="depth-share-wrap">
                 <a href="">
                     <svg width="24px" height="24px" viewBox="0 0 24 24">                    
                         <path d="M10.01875,20.7083333 L10.01875,12.9266667 L7.4125,12.9266667 L7.4125,9.83333333 L10.01875,9.83333333 L10.01875,7.39791667 C10.01875,4.75083333 11.63625,3.31041667 13.9979167,3.31041667 C15.1295833,3.31041667 16.10125,3.39375 16.3833333,3.4325 L16.3833333,6.19875 L14.7454167,6.19875 C13.46125,6.19875 13.2129167,6.81041667 13.2129167,7.70375 L13.2129167,9.83333333 L16.1116667,9.83333333 L15.7141667,12.9254167 L13.2141667,12.9254167 L13.2141667,20.7083333"></path>
@@ -74,32 +78,326 @@
         </div>
         <div class="dest-data">
             <div class="grid">
-                <div class="item-a">
-                    aaaa
+                <div class="item-a"></div>
+                <div class="item item-b">
                 </div>
-                <div class="flex justify-center pv4 items-center item item-b flex justify-center pv4 items-center">
-                    <div class="w-80 tc">
-                      <p class="b ttu f6 sans-serif">Idee</p>
-                      <h1 class="playfair b lh-title mv0 pv3">I tormenti del giovane scittore di sinstra</h1>
-                      <p class="lora"><span class="i">Filippo Bologna</span> – p. 150</p>
-                    </div>
-                </div>
-                <div class="flex justify-center pv5 items-center item item-c">
-                    
-                      <p class="b ttu f6 sans-serif">Fiction</p>
-                      
-                    
+                <div class="item item-c">
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="spots-wrap">
+        <img src="../img/a_depth/desti_spot.png">
     </div>
+
+    <div class="section-divide">
+        <span class="section-divide-line"></span>
+    </div>
+
+    <div class="section-title-wrap">
+        <p class="section-title-basic">Best Attractions</p>
+        <div class="carousel-control-wrap">
+            <p>1/3</p>
+            <div class="btn btn-prev" id="basic-carousel-prev">
+                <svg class="icon-arrow" width="9px" height="16px" viewBox="0 0 9 16">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-26.000000, -24.000000)" stroke="#000" stroke-width="2">
+                            <path d="M24,35.66 C28.6436159,31.22 30.9769492,29 31,29 C31.0230508,29 33.3563841,31.22 38,35.66" transform="translate(31.000000, 32.330000) rotate(-90.000000) translate(-31.000000, -32.330000) "></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="btn btn-next" id="basic-carousel-next">
+                <svg class="icon-arrow" width="9px" height="16px" viewBox="0 0 9 16">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-26.000000, -24.000000)" stroke="#000" stroke-width="2">
+                            <path d="M24,35.66 C28.6436159,31.22 30.9769492,29 31,29 C31.0230508,29 33.3563841,31.22 38,35.66" transform="translate(31.000000, 32.330000) rotate(-90.000000) translate(-31.000000, -32.330000) "></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="owl-carousel" id="basic-card-carousel">
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-1"></div>
+                <div class="text-wrap">
+                    <p>On the Road in Muju & Wanju</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-2"></div>
+                <div class="text-wrap">
+                    <p>Guide to Autumn Festivals</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-3"></div>
+                <div class="text-wrap">
+                    <p>Travel to Tongyeong, the Napoli of Asia</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-5"></div>
+                <div class="text-wrap">
+                    <p>Korea’s Grandest Landscape, Namhae</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-4"></div>
+                <div class="text-wrap">
+                    <p>On the Road in <br>Ulsan</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-6"></div>
+                <div class="text-wrap">
+                    <p>Fall in Love at Chocolate Dessert Cafés</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-7"></div>
+                <div class="text-wrap">
+                    <p>Fall in Love at Chocolate Dessert Cafés</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-8"></div>
+                <div class="text-wrap">
+                    <p>Fall in Love at Chocolate Dessert Cafés</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-9"></div>
+                <div class="text-wrap">
+                    <p>Fall in Love at Chocolate Dessert Cafés</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-10"></div>
+                <div class="text-wrap">
+                    <p>Fall in Love at Chocolate Dessert Cafés</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>               
+    </div>
+
+    <div class="section-divide">
+        <span class="section-divide-line"></span>
+    </div>
+
+    <div class="section-title-wrap">
+        <p class="section-title-basic">Best Local Foods</p>
+        <div class="carousel-control-wrap">
+            <p>1/3</p>
+            <div class="btn btn-prev" id="basic-carousel-prev-2">
+                <svg class="icon-arrow" width="9px" height="16px" viewBox="0 0 9 16">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-26.000000, -24.000000)" stroke="#000" stroke-width="2">
+                            <path d="M24,35.66 C28.6436159,31.22 30.9769492,29 31,29 C31.0230508,29 33.3563841,31.22 38,35.66" transform="translate(31.000000, 32.330000) rotate(-90.000000) translate(-31.000000, -32.330000) "></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="btn btn-next" id="basic-carousel-next-2">
+                <svg class="icon-arrow" width="9px" height="16px" viewBox="0 0 9 16">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-26.000000, -24.000000)" stroke="#000" stroke-width="2">
+                            <path d="M24,35.66 C28.6436159,31.22 30.9769492,29 31,29 C31.0230508,29 33.3563841,31.22 38,35.66" transform="translate(31.000000, 32.330000) rotate(-90.000000) translate(-31.000000, -32.330000) "></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="owl-carousel" id="basic-card-carousel-2">
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-1"></div>
+                <div class="text-wrap">
+                    <p>On the Road in Muju & Wanju</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-2"></div>
+                <div class="text-wrap">
+                    <p>Guide to Autumn Festivals</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-3"></div>
+                <div class="text-wrap">
+                    <p>Travel to Tongyeong, the Napoli of Asia</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-5"></div>
+                <div class="text-wrap">
+                    <p>Korea’s Grandest Landscape, Namhae</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-4"></div>
+                <div class="text-wrap">
+                    <p>On the Road in <br>Ulsan</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-6"></div>
+                <div class="text-wrap">
+                    <p>Fall in Love at Chocolate Dessert Cafés</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-7"></div>
+                <div class="text-wrap">
+                    <p>Fall in Love at Chocolate Dessert Cafés</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-8"></div>
+                <div class="text-wrap">
+                    <p>Fall in Love at Chocolate Dessert Cafés</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-9"></div>
+                <div class="text-wrap">
+                    <p>Fall in Love at Chocolate Dessert Cafés</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>
+        <div class="card">
+            <a href="a_detail.html">
+                <div class="thumb" id="basic-card-10"></div>
+                <div class="text-wrap">
+                    <p>Fall in Love at Chocolate Dessert Cafés</p>
+                </div>
+                <img src="../img/home/card_btn_posi.png" class="card-btns">
+            </a>
+        </div>               
+    </div>
+</div>
+<footer id="footer" style="margin-top: 6rem;">
+    <div class="banner">
+        <img src="../img/home/footer_banner.png">
+    </div>
+    <img src="../img/home/footer.png" class="footer-content">
+</footer>
     
-	<script type="text/javascript" src="../libs/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../libs/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../libs/owl_carousel/owl.carousel.min.js"></script>
     <script type="text/javascript" src="../pages/js/draft.js"></script>
 
 	<script>
-       
+       $("#basic-card-carousel").owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: false,
+                stagePadding: ($(document).width()-1170)/2 ,
+                responsive: {
+                
+                    960: {
+                    items: 3
+                    },
+                    1280: {
+                    items: 4
+                    }
+                },
+                slideBy: 4
+            });
+            $("#basic-carousel-next").click(function() {
+                $("#basic-card-carousel").trigger('next.owl.carousel');
+            });
+
+            $("#basic-carousel-prev").click(function() {
+                $("#basic-card-carousel").trigger('prev.owl.carousel');
+            });
+        
+        $("#basic-card-carousel-2").owlCarousel({
+            loop: false,
+            margin: 10,
+            nav: false,
+            stagePadding: ($(document).width()-1170)/2 ,
+            responsive: {
+            
+                960: {
+                items: 3
+                },
+                1280: {
+                items: 4
+                }
+            },
+            slideBy: 4
+        });
+        $("#basic-carousel-next-2").click(function() {
+            $("#basic-card-carousel-2").trigger('next.owl.carousel');
+        });
+
+        $("#basic-carousel-prev-2").click(function() {
+            $("#basic-card-carousel-2").trigger('prev.owl.carousel');
+        });
 	</script>
 
 </body>

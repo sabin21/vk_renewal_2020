@@ -12,8 +12,8 @@
 </head>
 
 <body class="basic-type-a-body">
-    <div class="wrap">
-        <div class="header-wrap">
+    
+        <div class="header-wrap home">
             <header>
                 <div class="logo-wrap">
                     <a href="./a_home.html"></a>
@@ -21,7 +21,8 @@
                 <nav class="gnb-menu-wrap">
                     <a href="#" class="gnb-menu">Destinations</a>
                     <a href="#" class="gnb-menu">Experiences</a>
-                    <a href="#" class="gnb-menu">Travel</a>                  
+                    <a href="#" class="gnb-menu">Plan Your Trip</a>
+                    <a href="#" class="gnb-menu">Trip Packages</a>               
                 </nav>
                 <div class="menu-wrap">
                     <a href="" class="search-wrap">
@@ -30,7 +31,7 @@
                         </svg>
                     </a>
                     <a href="" class="burger-wrap">
-                        <div class="burger-click-region">
+                        <div class="burger-click-region closing">
                             <span class="burger-menu-piece"></span>
                             <span class="burger-menu-piece"></span>
                             <span class="burger-menu-piece"></span>
@@ -65,7 +66,7 @@
         <div class="title-wrap">
             <p class="category-title">Travel Highlight</p>
             <h1>On the Road in Ulsan</h1>
-            <div class="share-wrap">
+            <div class="depth-share-wrap">
                 <a href="">
                     <svg width="24px" height="24px" viewBox="0 0 24 24">                    
                         <path d="M10.01875,20.7083333 L10.01875,12.9266667 L7.4125,12.9266667 L7.4125,9.83333333 L10.01875,9.83333333 L10.01875,7.39791667 C10.01875,4.75083333 11.63625,3.31041667 13.9979167,3.31041667 C15.1295833,3.31041667 16.10125,3.39375 16.3833333,3.4325 L16.3833333,6.19875 L14.7454167,6.19875 C13.46125,6.19875 13.2129167,6.81041667 13.2129167,7.70375 L13.2129167,9.83333333 L16.1116667,9.83333333 L15.7141667,12.9254167 L13.2141667,12.9254167 L13.2141667,20.7083333"></path>
@@ -102,11 +103,16 @@
                 </p>
             </div>
         </div>
+
         <div class="wrap-video" data-aos="fade-up" data-aos-id="opacity_2">
-            <video src="../video/ulsan_1.mp4" muted loop autoplay></video>
+            <div class="video-cover"></div>
+            <video src="../video/ulsan_1.mp4" muted loop></video>
         </div>
+
         <section class="wrap-map">
-            <div class="list-wrap"></div>
+            <div class="list-wrap">
+                <img src="../img/basic_a/ulsan_map_list.png" style="width: 350px;">
+            </div>
             <div class="map"></div>
         </section>
 
@@ -191,7 +197,7 @@
         </section>
         
     </div>
-</div>
+
 	<script type="text/javascript" src="../libs/jquery/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../libs/aos/aos.js"></script>
     <script type="text/javascript" src="../pages/js/draft.js"></script>
@@ -209,7 +215,7 @@
         });
         document.addEventListener('aos:in:opacity_2', ({ detail }) => {
             $('.overlay-fixed').css('opacity','1');
-            $('.overlay-fixed').css('background-color','#284E8A');
+            $('.overlay-fixed').css('background-color','#141415');
         });
         document.addEventListener('aos:out:opacity_2', ({ detail }) => {
             $('.overlay-fixed').css('opacity','0.95');

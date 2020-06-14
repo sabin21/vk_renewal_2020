@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="../libs/styles/common.css">
     <link rel="stylesheet" href="../libs/styles/draft_b.css">
 
-    <!--
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    -->
-
 </head>
 
 <body class="home">
@@ -34,23 +30,24 @@
         <nav class="gnb-menu-wrap">
             <a href="#" class="gnb-menu">Destinations</a>
             <a href="#" class="gnb-menu">Experiences</a>
-            <a href="#" class="gnb-menu">Travel</a>                  
+            <a href="#" class="gnb-menu">Plan Your Trip</a>
+            <a href="#" class="gnb-menu">Trip Packages</a>                  
         </nav>
         <div class="action-wrap">
-            <div class="btn-filter" @click="isOpen = true"></div>
-            <a href="" class="btn-search"></a>
-            <a href="" class="btn-mypage"></a>
+            <div class="btn-filter"></div>
+            <div class="btn-search"><a href="./b_trend.html"></a></div>
+            <div class="btn-mypage"><a href="./b_home-1.html"></a></div>
         </div>
     </header>
     
     <section class="hero-container">
         <div class="full-video-wrap">
-            <video src="../video/songso.mp4" class="full-video" muted autoplay loop></video>
+            <video src="../video/vk_intro.mp4" class="full-video" muted autoplay loop></video>
             <span class="video-overlay"></span>
-            <div class="title-wrap">
-                <p class="category-title">Travel Highlight</p>
-                <a href=""><h1>A Day in the Life<br>of 
-                    Joseon Aristocrats</h1></a>
+            <div class="title-wrap default">
+                <p class="category-title"></p>
+                <a href=""><h1>Design Your<br>
+                    Korea Experiences</h1></a>
             </div>
         </div>
     </section>
@@ -213,7 +210,7 @@
             <div class="slider-container">
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-06">
+                        <div class="thumb" id="tour-thumb-01">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -225,7 +222,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-02">
+                        <div class="thumb" id="tour-thumb-02">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -237,7 +234,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-03">
+                        <div class="thumb" id="tour-thumb-03">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -249,7 +246,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-04">
+                        <div class="thumb" id="tour-thumb-04">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -261,7 +258,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-05">
+                        <div class="thumb" id="tour-thumb-05">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -273,7 +270,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-06">
+                        <div class="thumb" id="tour-thumb-06">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -285,7 +282,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-07">
+                        <div class="thumb" id="tour-thumb-07">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -297,7 +294,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-08">
+                        <div class="thumb" id="tour-thumb-08">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -309,7 +306,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-09">
+                        <div class="thumb" id="tour-thumb-09">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -321,7 +318,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-01">
+                        <div class="thumb" id="tour-thumb-10">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -401,7 +398,7 @@
             <div class="slider-container">
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-01">
+                        <div class="thumb" id="column-thumb-muju">
                             <span class="card-ranking" id="rank-01"></span>
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
@@ -414,7 +411,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-02">
+                        <div class="thumb" id="column-thumb-tongyeong">
                             <span class="card-ranking" id="rank-02"></span>
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
@@ -427,7 +424,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-03">
+                        <div class="thumb" id="column-thumb-ulsan">
                             <span class="card-ranking" id="rank-03"></span>
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
@@ -440,7 +437,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-04">
+                        <div class="thumb" id="column-thumb-namhae">
                             <span class="card-ranking" id="rank-04"></span>
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
@@ -453,7 +450,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-05">
+                        <div class="thumb" id="column-thumb-chuncheon">
                             <span class="card-ranking" id="rank-05"></span>
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
@@ -552,7 +549,7 @@
             <div class="slider-container">
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-01">
+                        <div class="thumb" id="tour-thumb-06">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -564,7 +561,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-02">
+                        <div class="thumb" id="tour-thumb-07">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -576,7 +573,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-03">
+                        <div class="thumb" id="tour-thumb-08">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -588,7 +585,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-04">
+                        <div class="thumb" id="tour-thumb-09">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -600,7 +597,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-05">
+                        <div class="thumb" id="tour-thumb-10">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -612,7 +609,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-06">
+                        <div class="thumb" id="tour-thumb-01">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -624,7 +621,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-07">
+                        <div class="thumb" id="tour-thumb-02">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -636,7 +633,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-08">
+                        <div class="thumb" id="tour-thumb-03">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -648,7 +645,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-09">
+                        <div class="thumb" id="tour-thumb-04">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -660,7 +657,7 @@
                 </div>
                 <div class="slide">
                     <div class="slide-inner">
-                        <div class="thumb" id="column-thumb-01">
+                        <div class="thumb" id="tour-thumb-05">
                             <div class="card-detail-wrap">
                                 <div class="card-btn"></div>
                             </div>
@@ -693,72 +690,52 @@
             <div class="slider-container">
                 <div class="slide info">
                     <div class="slide-inner">
-                        <div class="thumb" id="info-thumb-01">
-                            
-                        </div>
+                        <div class="thumb" id="info-thumb-01"></div>
                     </div>
                 </div>
                 <div class="slide info">
                     <div class="slide-inner">
-                        <div class="thumb" id="info-thumb-01">
-                            
-                        </div>
+                        <div class="thumb" id="info-thumb-02"></div>
                     </div>
                 </div>
                 <div class="slide info">
                     <div class="slide-inner">
-                        <div class="thumb" id="info-thumb-01">
-                            
-                        </div>
+                        <div class="thumb" id="info-thumb-03"></div>
                     </div>
                 </div>
                 <div class="slide info">
                     <div class="slide-inner">
-                        <div class="thumb" id="info-thumb-01">
-                            
-                        </div>
+                        <div class="thumb" id="info-thumb-04"></div>
                     </div>
                 </div>
                 <div class="slide info">
                     <div class="slide-inner">
-                        <div class="thumb" id="info-thumb-01">
-                            
-                        </div>
+                        <div class="thumb" id="info-thumb-05"></div>
                     </div>
                 </div>
                 <div class="slide info">
                     <div class="slide-inner">
-                        <div class="thumb" id="info-thumb-01">
-                            
-                        </div>
+                        <div class="thumb" id="info-thumb-06"></div>
                     </div>
                 </div>
                 <div class="slide info">
                     <div class="slide-inner">
-                        <div class="thumb" id="info-thumb-01">
-                            
-                        </div>
+                        <div class="thumb" id="info-thumb-04"></div>
                     </div>
                 </div>
                 <div class="slide info">
                     <div class="slide-inner">
-                        <div class="thumb" id="info-thumb-01">
-                            
-                        </div>
+                        <div class="thumb" id="info-thumb-03"></div>
                     </div>
                 </div>
                 <div class="slide info">
                     <div class="slide-inner">
-                        <div class="thumb" id="info-thumb-01">
-                            
-                        </div>
+                        <div class="thumb" id="info-thumb-01"></div>
                     </div>
                 </div>
                 <div class="slide info">
                     <div class="slide-inner">
-                        <div class="thumb" id="info-thumb-01">
-                            
-                        </div>
+                        <div class="thumb" id="info-thumb-01"></div>
                     </div>
                 </div>              
             </div>
@@ -787,7 +764,32 @@
                 </div>
                 <div class="slide info">
                     <div class="slide-inner">
-                        <div class="thumb" id="promo-thumb-01"></div>
+                        <div class="thumb" id="promo-thumb-02"></div>
+                    </div>
+                </div>
+                <div class="slide info">
+                    <div class="slide-inner">
+                        <div class="thumb" id="promo-thumb-03"></div>
+                    </div>
+                </div>
+                <div class="slide info">
+                    <div class="slide-inner">
+                        <div class="thumb" id="promo-thumb-04"></div>
+                    </div>
+                </div>
+                <div class="slide info">
+                    <div class="slide-inner">
+                        <div class="thumb" id="promo-thumb-05"></div>
+                    </div>
+                </div>
+                <div class="slide info">
+                    <div class="slide-inner">
+                        <div class="thumb" id="promo-thumb-03"></div>
+                    </div>
+                </div>
+                <div class="slide info">
+                    <div class="slide-inner">
+                        <div class="thumb" id="promo-thumb-02"></div>
                     </div>
                 </div>
                 <div class="slide info">
@@ -797,37 +799,12 @@
                 </div>
                 <div class="slide info">
                     <div class="slide-inner">
-                        <div class="thumb" id="promo-thumb-01"></div>
+                        <div class="thumb" id="promo-thumb-05"></div>
                     </div>
                 </div>
                 <div class="slide info">
                     <div class="slide-inner">
-                        <div class="thumb" id="promo-thumb-01"></div>
-                    </div>
-                </div>
-                <div class="slide info">
-                    <div class="slide-inner">
-                        <div class="thumb" id="promo-thumb-01"></div>
-                    </div>
-                </div>
-                <div class="slide info">
-                    <div class="slide-inner">
-                        <div class="thumb" id="promo-thumb-01"></div>
-                    </div>
-                </div>
-                <div class="slide info">
-                    <div class="slide-inner">
-                        <div class="thumb" id="promo-thumb-01"></div>
-                    </div>
-                </div>
-                <div class="slide info">
-                    <div class="slide-inner">
-                        <div class="thumb" id="promo-thumb-01"></div>
-                    </div>
-                </div>
-                <div class="slide info">
-                    <div class="slide-inner">
-                        <div class="thumb" id="promo-thumb-01"></div>
+                        <div class="thumb" id="promo-thumb-03"></div>
                     </div>
                 </div>              
             </div>

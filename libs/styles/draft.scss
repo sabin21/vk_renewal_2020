@@ -28,6 +28,14 @@ button { cursor: pointer;}
   }
   .footer-content { width: 1170px; margin-top: 2rem; }
 }
+.mo-page {
+    &::-webkit-scrollbar { width: 0px;}
+    &::-webkit-scrollbar-track { display: none; }
+    &::-webkit-scrollbar-thumb {
+        background: rgba(200,200,200,0.2); 
+    }
+    &.white { background-color: #fff;}
+}
 //----------------
 .full-video-wrap{
     position: relative; width:100%; height: calc(100vh - #{$headerHeightLG}); overflow: hidden;
@@ -43,6 +51,9 @@ button { cursor: pointer;}
         display: block; position: absolute; width: 100%; height: 100%;
         top:0; left: 0; 
         background: linear-gradient(to bottom, rgba(0,0,0,0.2) 25%,rgba(0,0,0,0.2) 45%,rgba(0,0,0,0.7) 80%,rgba(0,0,0,0.7) 100%);
+      &.region {
+        background: linear-gradient(to bottom, rgba(0,0,0,0.1) 15%,rgba(0,0,0,0) 55%,rgba(0,0,0,0.6) 80%,rgba(0,0,0,0.7) 100%);
+      }
     }
 }
 
@@ -57,6 +68,7 @@ button { cursor: pointer;}
   .overlay {
     display: block; position: absolute; width: 100%; height: 100%; top:0; left: 0; 
     background: linear-gradient(to bottom, rgba(0,0,0,0.2) 25%,rgba(0,0,0,0.2) 45%,rgba(0,0,0,0.7) 80%,rgba(0,0,0,0.7) 100%);
+    
   }
   
 }
@@ -67,27 +79,33 @@ button { cursor: pointer;}
     font-size: 4.5vw; font-family: $FF_display_serif;
     letter-spacing: -0.03em; width: calc(100% - 300px); line-height: 1.1em;
     &.big-1{
-      font-size: 5.5vw; line-height: 1em; color: #fff;
+      font-size: 5vw; line-height: 1em; color: #fff;
     }
   }
   .category-title {
     font-size: 18px; text-transform: uppercase; font-weight: bold;
   }
-  .share-wrap {
-    position: absolute; right: 6vw;
-    a{
-      position: relative; display: inline-block; width: 48px; height: 48px; 
-      border-radius: 50%; border:1px solid #fff; bottom: 3rem; margin-left: 4px; 
-      svg{
-        width: 32px; height: 32px; position: absolute; margin: auto; top:0; bottom: 0; left:0; right:0;
-        path{ fill: #fff; }
-      }
-    }    
+  .depth-share-wrap {
+    right: 4vw;    
   }
+  &.region {
+    bottom: 60px; padding-left: 4vw;
+  }
+}
+.depth-share-wrap {
+  position: absolute;
+  a{
+    position: relative; display: inline-block; width: 48px; height: 48px; 
+    border-radius: 50%; border:1px solid #fff; bottom: 3rem; margin-left: 4px; 
+    svg{
+      width: 32px; height: 32px; position: absolute; margin: auto; top:0; bottom: 0; left:0; right:0;
+      path{ fill: #fff; }
+    }
+  }    
 }
 .article-header{
   position: fixed; width:100%; max-width: 1600px; height: 60px; background-color:#fff;
-  top: -70px; z-index: 10; transition: top 0.25s;
+  top: -70px; z-index: 10; transition: top 0.25s; z-index: 9999;
   border-bottom: 1px solid #CFCFCF;
   .article-title{
     position: relative; width:70%; font-size: 22px; font-family: $FF_display_serif;
@@ -112,7 +130,7 @@ button { cursor: pointer;}
 // Home  -------------- 
 
 .banner-outer{
-  position: absolute; width:100%; height:100vh; top:0; left:0; z-index: 9999;
+  position: absolute; width:100%; height:100vh; top:0; left:0; z-index: 999;
   .banner-wrap {
     position: absolute; width: 260px; height: 520px; top: 0; bottom:0; right:0;
     margin:auto; display:flex; flex-direction: column;
@@ -131,6 +149,12 @@ button { cursor: pointer;}
     } 
   }
 }
+@media all and (max-width:480px){
+  .banner-outer { 
+    height:300px; top: 100vh;
+    .banner-wrap { width:100vw; height: 300px; }
+  }
+}
 .hero-overlay{
   display: block; position: absolute; width:100%; height:100vh; top:0; left:0; z-index: 9990;
   background-color: rgba(0,0,0,0.5);
@@ -146,6 +170,7 @@ button { cursor: pointer;}
     margin-left: calc((100% - 1170px) / 2);
   }
 }
+
 .carousel-control-wrap {
   position: absolute; right: 32px; top:0px; display: flex; 
   p { line-height: 24px; margin-right: 8px; }
@@ -190,7 +215,7 @@ button { cursor: pointer;}
         font-size: 14px; text-transform: uppercase; font-weight: 500;
       }
       .card-title {
-        font-size: 2.2vw; font-weight: bold; margin-top: 8px; line-height: 1.1em;
+        font-size: 2vw; font-weight: bold; margin-top: 8px; line-height: 1.1em;
       }
     }
     .card-detail {
@@ -218,11 +243,10 @@ button { cursor: pointer;}
   &:hover {
     .card-back { transform: scale3d(1.2, 1.2, 1); }
     .card-detail { opacity: 1; top: 0;}
-  }  
-      
+  }        
   }
 }
-#basic-card-carousel{
+#basic-card-carousel, #basic-card-carousel-2{
   position: relative; width:100%; overflow: hidden; margin-top: 2rem;
   .card {
     position: relative; width: 285px; 
@@ -238,11 +262,16 @@ button { cursor: pointer;}
       &#basic-card-8 { background-image:url(../../img/thumbs/4x3_tongyeong_2.png);}
       &#basic-card-9 { background-image:url(../../img/thumbs/4x3_chuncheon.png);}
       &#basic-card-10 { background-image:url(../../img/thumbs/4x3_festival_september.png);}
+      &#basic-card-info-subway { background-image:url(../../img/thumbs/4x3_subway.png);}
+      &#basic-card-info-train { background-image:url(../../img/thumbs/4x3_trains.png);}
+      &#basic-card-info-center { background-image:url(../../img/thumbs/4x3_center.png);}
+      &#basic-card-info-hotline { background-image:url(../../img/thumbs/4x3_hotline.png);}
+      &#basic-card-info-flight { background-image:url(../../img/thumbs/4x3_flight.png);}
     }
     .text-wrap{
       p{
-        width: 80%; font-size: 20px; padding: 1rem 0; font-weight: 500;
-        letter-spacing: -0.01em; line-height: 1.25em;
+        width: 85%; font-size: 19px; padding: 1rem 0; font-weight: 500;
+        letter-spacing: -0.01em; line-height: 1.3em; color:#2C2E33;
       }
     }
     .card-btns { width: 88px; margin-top: 8px;}       
@@ -250,8 +279,10 @@ button { cursor: pointer;}
 }
 #tour-card-carousel{
   position: relative; width:100%; overflow: hidden; margin-top: 2rem;
+  
   .card-block{
-    display: flex; 
+    display: flex;
+    a{ line-height: 0; }
     .card-big, .card {
       img { max-width: 100%;}
     }
@@ -277,7 +308,25 @@ button { cursor: pointer;}
     img { max-width:100%; }
   }
 }
+@media all and (max-width:480px){
+  .chosen-wrap{
+    margin: 20rem 0;
+  }
+  #big-card-carousel{    
+    .card { 
+      width:300px; height: 420px;
+      .text-wrap{        
+        .category {
+          font-size: 16px; 
+        }
+        .card-title {
+          font-size: 8vw; 
+        }
+      }
+    }
 
+  }
+}
 .section-divide{
   position: relative; width:100%; height:1px; margin-top:2rem; margin-bottom:2rem;
   .section-divide-line {
@@ -288,9 +337,9 @@ button { cursor: pointer;}
 }
 
 
-// Destitions -------------- 
+// Destinations -------------- 
 .dest-wrap {
-    position: relative; width: 100%; height: 900px; overflow: hidden;
+    position: relative; width: 100%; height: 800px; overflow: hidden;
 }
 .dest-text-wrap{
   width: 60%; 
@@ -315,28 +364,36 @@ button { cursor: pointer;}
           display: flex; flex-wrap: wrap;
           margin: 0 auto;
         }
+        .item-a, .item-b, .item-c {
+          background-position: center; background-repeat: no-repeat;
+        }
       
         .item-a {
-        width: 100%; height: 60%;
+          width: 100%; height: 65%;
           border-top: 1px solid #fff;
           border-left: 1px solid #fff;
           border-right: 1px solid #fff;
+          background-image:url(../../img/a_depth/desti_map.png); background-size: 48%;
         }
       
         .item-b {
-          width:50%; height: 40%;
+          width:50%; height: 35%;
           border-top: 1px solid #fff;
           border-left: 1px solid #fff;
           border-bottom: 1px solid #fff;
           border-right: none;
+          background-image:url(../../img/a_depth/desti_weather.png); background-size: 75%;
         }
       
         .item-c {
-        width:50%;
-          border: 1px solid #fff;
+          width:50%; border: 1px solid #fff;
+          background-image:url(../../img/a_depth/desti_transport.png); background-size: 75%;
         }            
 }
-
+.spots-wrap {
+  position: relative; width: 100%; height: 1150px; text-align: center;
+  img { max-width: 1170px; margin-top: 200px;}
+}
 // Basic Type A --------------
 
 #basic-a-hero {
@@ -344,22 +401,22 @@ button { cursor: pointer;}
 }
 .basic-type-a-body{
   .full-video-wrap{
-    position: fixed; width: 100%; max-width: 1600px; height: 100vh; top:0;
+    position: fixed; width: 100%; height: 100vh; top:0;
     z-index: -1;
   }
   .overlay-fixed{
-    position: fixed; width: 100%; max-width: 1600px; height: 100%; top:0;
+    position: fixed; width: 100%; height: 100%; top:0;
     background-color:#0C131F; opacity: 0;
     transition: all 0.4s;
   }
 
   .content-wrap{
-    position: relative; width:100%; min-height: 100vh; top:100vh;
+    position: relative; width:100%; height:auto; top:100vh; 
     .wrap-intro {
-      position: relative; width:100%; height: 100%; min-height: 100vh;
+      position: relative; width:100%; height: 1100px; 
     }
     .wrap-1{
-      position: absolute; width: 100%; max-width: 564px; height:100%; max-height: 900px;
+      position: absolute; width: 100%; max-width: 564px; height: 900px;
       margin:0 auto; border:1px solid rgba(255,255,255,0.3);
       left:0; right:0; 
       .map-wrap{
@@ -378,8 +435,14 @@ button { cursor: pointer;}
       }      
     }
     .wrap-video {
-      position: relative; width: 100%; min-height: 140vh;
-      padding: 30rem 0; 
+      position: relative; width: 100%; height: 1000px;
+      padding: 30rem 0;
+      .video-cover { 
+        position: absolute; width: 1120px; height:630px;
+        margin:auto; left:0; right: 0; top:0; bottom:0;
+        background-image: url(../../img/basic_a/video_cover.png);
+        background-size: cover; z-index: 10;
+      }
       video{
         position: absolute; width: 1120px; height:630px;
         margin:auto; left:0; right: 0; top:0; bottom:0;
@@ -397,23 +460,23 @@ button { cursor: pointer;}
       }      
     }
     .block-basic{
-      position: relative; width:100%; background-color: #fff; padding: 4rem 0 4rem 0;
+      position: relative; width:100%; background-color: #fff; padding: 8rem 0 4rem 0;
       .image-single-wrap{
-        position: inherit; width: 100%; max-width:1120px; margin:0 auto;
+        position: relative; width: 100%; max-width:1120px; margin:0 auto;
         img{ max-width: 100%;}
       }
       .text-wrap{
-        position: inherit; width: 100%; max-width:768px; margin:0 auto;
+        position: relative; width: 100%; max-width:768px; margin:0 auto;
         .title-sub {
           width:100%; font-family: $FF_display_serif; font-size: 28px; font-weight: 500;
           letter-spacing: -0.02em; padding: 2rem 0 1rem 0;
         }
         p{ font-size:18px; padding: 1rem 0; }
         .detail-wrap{
-          position: inherit; width: 100%; height: auto; overflow: hidden;
+          position: relative; width: 100%; height: auto; overflow: hidden;
           transition: all 0.3s;
           .detail-head{
-            position: inherit; width:100%; margin-top: 1.5rem;
+            position: relative; width:100%; margin-top: 1.5rem;
             border-top: 1px solid $color_ui_600; border-bottom: 1px solid $color_ui_600;
             p{
               text-align: left; font-size: 14px; font-weight: 700; padding-left: 1.5rem;

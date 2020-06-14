@@ -182,7 +182,7 @@
 }
 .block-header-home__content {
     position: relative; width: 100%; display: flex;
-     flex-direction: column;
+    flex-direction: column; 
 }
 .block-header-home__subtitle {
     display: block; margin-bottom: 1rem; color: #fff; text-transform: uppercase;
@@ -191,6 +191,24 @@
 .block-header-home__title { 
     margin-bottom: 1rem; color: #fff; font-size: 4vw;
     line-height: 1.1em;
+}
+@media all and (max-width: 420px){
+    .block-header-home__content { width: 90vw; margin-bottom: 30vh;}
+    .block-header-home__subtitle { width:100%; text-align: center; }
+    .block-header-home__title { 
+        width:100%; text-align: center; font-size: 10vw; 
+    }
+    .block-header-home__body-mask-inner{
+        text-align: center;
+        a {
+            font-size: 12px; height: 28px; border-radius: 14px; padding: 6px 16px;
+            margin-top: 6px;
+        }
+    }
+    .block-header-home__navigation {
+        display: none;
+    }
+
 }
 .block-header-home__title-mask {
     margin-bottom: 0; line-height: 1.1; padding-bottom: 1vw;

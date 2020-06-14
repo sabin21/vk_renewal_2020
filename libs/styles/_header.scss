@@ -4,7 +4,7 @@
 .header-wrap{
     position: fixed; display: flex; flex-direction: row;
     width: 100%; height: $headerHeightLG; top:0; left:0;
-    background-color: rgba(255,255,255,1); z-index: 100000;
+    background-color: rgba(255,255,255,1); z-index: 1000;
     background:linear-gradient(to bottom, rgba(0,0,0,0.3) 20%,rgba(0,0,0,0) 100% );
     transition: all 0.3s;
     
@@ -21,7 +21,7 @@
     .gnb-menu-wrap{
         position: relative; display: flex; flex-direction: row; margin-left: 42px;
         .gnb-menu {
-            position: relative; padding: 0 20px; line-height:$headerHeightLG; cursor: pointer; float:left;
+            position: relative; padding: 0 16px; line-height:$headerHeightLG; cursor: pointer; float:left;
             font-family: 'Poppins'; font-weight: bold; color: #000;
             text-transform: uppercase;
             &:hover, &:focus-within { color: #000; }                   
@@ -38,6 +38,10 @@
             position: absolute; width: 56px; height: 30px; margin: auto;
             right:0; top:24px; 
         }
+    }
+    &.depth {
+        position: absolute; 
+        background:none; background-color: rgba(255,255,255,1);
     }
     
     &.home {

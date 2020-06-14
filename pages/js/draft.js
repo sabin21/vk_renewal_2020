@@ -21,12 +21,15 @@ burgerBtn.on('click', function(){
   });
 });
 
-$(document).on('scroll', function(){
-  if ($(document).scrollTop() > 80){
-      $('.header-wrap').removeClass('home');
-      $('.header-wrap').addClass('white-back');
-  }else{
-      $('.header-wrap').addClass('home');
-      $('.header-wrap').removeClass('white-back');
-  }
-});
+if($('body').hasClass('a-home')){
+  $(document).on('scroll', function(){
+    if ($(document).scrollTop() > 80){
+        $('.header-wrap').removeClass('home');
+        $('.header-wrap').addClass('white-back');
+    }else{
+        $('.header-wrap').addClass('home');
+        $('.header-wrap').removeClass('white-back');
+    }
+  });
+}
+

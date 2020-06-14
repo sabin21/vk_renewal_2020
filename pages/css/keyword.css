@@ -300,6 +300,10 @@ a:hover, a:focus {
   will-change: transform;
 }
 
+.grid__item-wrap:hover .item-inner-wrap {
+  opacity: 1;
+}
+
 .grid__item::after {
   content: '';
   background: black;
