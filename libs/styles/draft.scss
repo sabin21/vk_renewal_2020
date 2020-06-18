@@ -30,6 +30,7 @@ button { cursor: pointer;}
     img{ width: 1168px; margin: 20px 0; }  
   }
   .footer-content { width: 1170px; margin-top: 2rem; }
+  &.footer-depth { height: 260px; min-height: 260px;}
 }
 .mo-page {
     &::-webkit-scrollbar { width: 0px;}
@@ -305,6 +306,12 @@ button { cursor: pointer;}
       &#basic-card-info-center { background-image:url(../../img/thumbs/4x3_center.png);}
       &#basic-card-info-hotline { background-image:url(../../img/thumbs/4x3_hotline.png);}
       &#basic-card-info-flight { background-image:url(../../img/thumbs/4x3_flight.png);}
+
+      &#nearby-01 { background-image:url(../../img/a_depth/detail_nearby_1.png); }
+      &#nearby-02 { background-image:url(../../img/a_depth/detail_nearby_2.png); }
+      &#nearby-03 { background-image:url(../../img/a_depth/detail_nearby_3.png); }
+      &#nearby-04 { background-image:url(../../img/a_depth/detail_nearby_4.png); }
+      &#nearby-05 { background-image:url(../../img/a_depth/detail_nearby_5.png); }
     }
     .text-wrap{
       p{

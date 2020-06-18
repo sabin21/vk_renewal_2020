@@ -6,7 +6,7 @@
 //-----------------
 body {
   font-family: "IBM Plex sans","Noto KR sans"; 
-  &.home{ background-color: #1A1C1D; min-height: 200vh;}
+  &.home{ background-color: #1A1C1D; }
 }
 button, input { 
   border:none;
@@ -24,6 +24,7 @@ button { cursor: pointer;}
           img{ width: 1168px; margin: 20px 0; }  
         }
         .footer-content { width: 1170px; margin-top: 2rem; }
+        &.depth { height: 240px; }
     }
 
 //----------------

@@ -4,7 +4,6 @@ body {
 
 body.home {
   background-color: #1A1C1D;
-  min-height: 200vh;
 }
 
 button, input {
@@ -49,6 +48,10 @@ button {
 #footer .footer-content {
   width: 1170px;
   margin-top: 2rem;
+}
+
+#footer.depth {
+  height: 240px;
 }
 
 .header-wrap {

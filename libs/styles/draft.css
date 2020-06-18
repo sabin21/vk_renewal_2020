@@ -395,6 +395,11 @@ button {
   margin-top: 2rem;
 }
 
+#footer.footer-depth {
+  height: 260px;
+  min-height: 260px;
+}
+
 .mo-page::-webkit-scrollbar {
   width: 0px;
 }
@@ -1070,6 +1075,26 @@ button {
 
 #basic-card-carousel .card .thumb#basic-card-info-flight, #basic-card-carousel-2 .card .thumb#basic-card-info-flight {
   background-image: url(../../img/thumbs/4x3_flight.png);
+}
+
+#basic-card-carousel .card .thumb#nearby-01, #basic-card-carousel-2 .card .thumb#nearby-01 {
+  background-image: url(../../img/a_depth/detail_nearby_1.png);
+}
+
+#basic-card-carousel .card .thumb#nearby-02, #basic-card-carousel-2 .card .thumb#nearby-02 {
+  background-image: url(../../img/a_depth/detail_nearby_2.png);
+}
+
+#basic-card-carousel .card .thumb#nearby-03, #basic-card-carousel-2 .card .thumb#nearby-03 {
+  background-image: url(../../img/a_depth/detail_nearby_3.png);
+}
+
+#basic-card-carousel .card .thumb#nearby-04, #basic-card-carousel-2 .card .thumb#nearby-04 {
+  background-image: url(../../img/a_depth/detail_nearby_4.png);
+}
+
+#basic-card-carousel .card .thumb#nearby-05, #basic-card-carousel-2 .card .thumb#nearby-05 {
+  background-image: url(../../img/a_depth/detail_nearby_5.png);
 }
 
 #basic-card-carousel .card .text-wrap p, #basic-card-carousel-2 .card .text-wrap p {

@@ -30,8 +30,6 @@ if ($('body').hasClass('desktop')){
   });
 }
 
-  
-
 $(document).on('scroll', function(){
     if ($(document).scrollTop() > 80){
         $('.header-wrap').addClass('active');
