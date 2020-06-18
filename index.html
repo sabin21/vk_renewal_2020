@@ -12,9 +12,25 @@
 
 <body>
 <div class="wrap-index">
-    <div class="left-bar">
-        <p class="title">Design Concept</p>
-    </div>
+    <section class="concept-wrap">
+        <div class="concept-inner-wrap">
+            <div class="inin">
+                <img src="./img/index/concept_1.png">
+            <span></span>
+            <img src="./img/index/concept_2.png">
+            </div>
+            <span></span>
+            <p>END</p>
+            
+        </div>
+        <div class="left-bar">
+            <p class="title">Design Concept</p>
+        </div>
+        <div class="btn-concept-close">
+            <img src="./img/index/btn_close.png">
+        </div>
+    </section>
+    
     <div class="inner-wrap">
         <div class="title-wrap">
             <img src="./img/index/logo.png" class="logo">
@@ -22,46 +38,49 @@
         </div>
         <div class="content-wrap">
             <div class="card-wrap">
-                <div class="card"></div>
-                <p>Type A - Desktop</p>
+                <a href="./pages/a_home.html" target="_blank">
+                    <div class="card" style="background-image:url('./img/index/a_desktop.png')"></div>
+                    <p>Type A - Desktop</p>
+                </a>
             </div>
             <div class="card-wrap">
-                <div class="card"></div>
-                <p>Type A - Mobile</p>
+                <a href="./pages/a_mo.html" target="_blank">
+                    <div class="card" style="background-image:url('./img/index/a_mo.png')"></div>
+                    <p>Type A - Mobile</p>
+                </a>
             </div>
             <div class="card-wrap">
-                <div class="card"></div>
-                <p>Type B - Desktop</p>
+                <a href="./pages/b_home-0.html" target="_blank">
+                    <div class="card" style="background-image:url('./img/index/b_desktop.png')"></div>
+                    <p>Type B - Desktop</p>
+                </a>
             </div>
             <div class="card-wrap">
-                <div class="card"></div>
-                <p>Type B - Mobile</p>
+                <a href="./pages/b_mo.html" target="_blank">
+                    <div class="card" style="background-image:url('./img/index/b_mo.png')"></div>
+                    <p>Type B - Mobile</p>
+                </a>
             </div>
         </div>
         <div class="links-wrap">
             <ul>
                 <li class="title">Type A </li>
-                <li><a href="./pages/a_home.html">Desktop - Home</a></li>
-                <li><a href="./pages/a_destination.html">Desktop - 지역메인</a></li>                
+                <li><a href="./pages/a_home.html" target="_blank">Desktop - Home</a></li>
+                <li><a href="./pages/a_destination.html" target="_blank">Desktop - 지역메인</a></li>                
                 <li><a href="./pages/a_basic.html">Desktop - 관광 컬럼 기본형</a></li>
                 <li><a href="./pages/a_detail.html">Desktop - 관광지 상세 소개</a></li>
-                <li><a href="./pages/a_course.html">Desktop - 관광 컬럼 추천 일정</a></li>
-                <li><a href="./pages/a_review.html">Desktop - 관광객 관광 리뷰</a></li>
-                <li><a href="">Mobile - Home</a></li>
-                <li><a href="">Mobile - 지역메인</a></li>
-                <li><a href="">Mobile - 관광지 상세 소개</a></li>
-                <li><a href="">Mobile - 관광 컬럼 기본형</a></li>
-                <li><a href="">Mobile - 관광 컬럼 추천 일정</a></li>
-                <li><a href="">Mobile - 관광객 관광 리뷰</a></li>
+                <li><a href="./pages/a_mo.html">Mobile - Home</a></li>
+                <li><a href="./pages/a_mo_destination.html">Mobile - 지역메인</a></li>
+                <li><a href="./pages/a_mo_detail.html">Mobile - 관광지 상세 소개</a></li>
             </ul>
             <ul>
                 <li class="title">Type B </li>
-                <li><a href="./pages/b_home-0.html">Desktop - Home (로그인 이전)</a></li>
-                <li><a href="">Desktop - Home (로그인 이후)</a></li>
-                <li><a href="">Desktop - 관광지 컬럼 기본형</a></li>
-                <li><a href="">Mobile - Home</a></li>
-                <li><a href="">Mobile - 지역메인</a></li>
-                <li><a href="">Mobile - 관광지 상세 소개</a></li>
+                <li><a href="./pages/b_home-0.html" target="_blank">Desktop - Home (로그인 이전)</a></li>
+                <li><a href="./pages/b_home-1.html" target="_blank">Desktop - Home (로그인 이후)</a></li>
+                <li><a href="./pages/b_vr.html" class="dimmed" target="_blank">Desktop - VR 컨텐츠</a></li>
+                <li><a href="./pages/b_trend.html" target="_blank">Desktop - 트렌드 키워드</a></li>                
+                <li><a href="./pages/b_mo.html" target="_blank">Mobile - Home (로그인 이전)</a></li>
+                <li><a href="./pages/b_mo-1.html" target="_blank">Mobile - Home (로그인 이후)</a></li>
             </ul>
         </div>
     </div>
@@ -71,7 +90,15 @@
     <script type="text/javascript" src="./pages/js/draft.js"></script>
 
 	<script>
-        
+        var conceptPage = $('.concept-wrap');
+        $('.left-bar').on('click', function(){
+            conceptPage.css('left', '0');
+            //$('body').css('overflow-y','hidden');
+        });
+        $('.btn-concept-close').on('click', function(){
+            conceptPage.css('left', '-100%');
+            //$('body').css('overflow-y','scroll');
+        });
         
 	</script>
 

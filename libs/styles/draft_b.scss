@@ -6,14 +6,14 @@
 //-----------------
 body {
   font-family: "IBM Plex sans","Noto KR sans"; 
-  &.home{ background-color: #1A1C1D; }
+  &.home{ background-color: #1A1C1D; min-height: 200vh;}
 }
 button, input { 
   border:none;
   &:focus { outline: none; } 
 }
 button { cursor: pointer;}
-.wrap { position: relative; width:100%; }
+.wrap { position: relative; width:100%; min-height: 100vh;}
 #footer {
         position: relative; width:100%; height: 380px;
         border-top:1px solid #3F4042; line-height: 0; text-align: center;
@@ -69,6 +69,30 @@ button { cursor: pointer;}
             &.login { background-image: url(../../img/b_header_icon_mypage_2.png); } 
         }
     }
+    &.mo {
+        height: 54px;
+        .logo-wrap { 
+            transform: scale(0.8); transform-origin: 0 0; top: 13px;
+            left: 16px;
+        }
+        .menu-wrap{
+            transform: scale(0.8); right:2px; top: -8px;    
+        }
+        .action-wrap { 
+            transform: scale(0.8); top: 7px; right: 2px;
+            .btn-filter, .btn-search, .btn-mypage{
+                margin-left: 6px;
+            }
+            .burger {
+                display: inline-block; width:40px; height: 40px;
+                span { 
+                    display: block; width: 24px; height:2px; background: #fff; margin:6px auto;
+                    &:nth-child(1) { margin-top: 10px; }
+                }
+            }
+        }
+        
+    }
 }
 
 //----------------
@@ -114,17 +138,45 @@ button { cursor: pointer;}
         &.default{
             height: 100px; margin:auto; bottom: 360px;
             h1{
-                //font-family: "IBM Plex serif"; 
                 font-size: 3.5vw; text-align: center; letter-spacing: 0.25em;
                 text-transform: uppercase;
                 font-weight: 700; width:100%;
             }
         }
+        &.mo {
+            width: 80%; height: auto; bottom: 100px; left: 30px;
+            .category-title {
+                font-size: 16px; 
+            }
+            h1 { width:100%; font-size: 9.5vw; }
+        }
+    }
+}
+@media all and (max-width:480px){
+    .hero-container{
+        height: 560px;
+        .title-wrap{
+            padding-left: 0; padding-right:0; bottom:auto; top: 170px;
+            &.default{
+                width:100%;
+                h1{ font-size: 7vw; width:100%;}
+            }
+            &.mo {
+                top: 300px;
+            }
+            
+        }
     }
 }
 //-----------------
 .contents-wrap{
-    position: absolute; width: 100%; z-index: 5; top: 620px; 
+    position: absolute; width: 100%; z-index: 5; top: 620px;
+    &.mo {
+        top: 480px;
+        .content-full {
+            width: 570px;
+        }
+    }
 }
 .contents-wrap2{
     position: relative; width: 100%; z-index: 5; top: 920px; 
@@ -227,6 +279,24 @@ button { cursor: pointer;}
                     &#tour2-thumb-13 { background-image: url(../../img/thumbs/tours2_13.png); }
                     &#tour2-thumb-14 { background-image: url(../../img/thumbs/tours2_14.png); }
                     &#tour2-thumb-15 { background-image: url(../../img/thumbs/tours2_15.png); }
+
+                    &#gangneung-1 { background-image: url(../../img/thumbs/gangneung_1.png); }
+                    &#gangneung-2 { background-image: url(../../img/thumbs/gangneung_2.png); }
+                    &#gangneung-3 { background-image: url(../../img/thumbs/gangneung_3.png); }
+                    &#gangneung-4 { background-image: url(../../img/thumbs/gangneung_4.png); }
+                    &#gangneung-5 { background-image: url(../../img/thumbs/gangneung_5.png); }
+
+                    &#busan-1 { background-image: url(../../img/thumbs/busan_1.png); }
+                    &#busan-2 { background-image: url(../../img/thumbs/busan_2.png); }
+                    &#busan-3 { background-image: url(../../img/thumbs/busan_3.png); }
+                    &#busan-4 { background-image: url(../../img/thumbs/busan_4.png); }
+                    &#busan-5 { background-image: url(../../img/thumbs/busan_5.png); }
+
+                    &#jeonju-1 { background-image: url(../../img/thumbs/junju_1.png); }
+                    &#jeonju-2 { background-image: url(../../img/thumbs/junju_2.png); }
+                    &#jeonju-3 { background-image: url(../../img/thumbs/junju_3.png); }
+                    &#jeonju-4 { background-image: url(../../img/thumbs/junju_4.png); }
+                    &#jeonju-5 { background-image: url(../../img/thumbs/junju_5.png); }
 
                     .card-ranking {
                         position: absolute; width:70px; height: 70px; @include backImageCover;

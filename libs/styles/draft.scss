@@ -16,7 +16,10 @@ button, input {
   &:focus { outline: none; } 
 }
 button { cursor: pointer;}
-.wrap { position: relative; width:100%; max-width: 1600px; margin: 0 auto; overflow: hidden; }
+.wrap { 
+  position: relative; width:100%; max-width: 1920px; margin: 0 auto; overflow: hidden;
+  &.full { max-width: 100%;} 
+}
 
 #footer {
   position: relative; width:100%; min-height: 380px;
@@ -55,6 +58,9 @@ button { cursor: pointer;}
         background: linear-gradient(to bottom, rgba(0,0,0,0.1) 15%,rgba(0,0,0,0) 55%,rgba(0,0,0,0.6) 80%,rgba(0,0,0,0.7) 100%);
       }
     }
+    &.desti-mo {
+      height:100vh; max-height: 680px; 
+    }
 }
 
 .inner-wrap{
@@ -73,7 +79,7 @@ button { cursor: pointer;}
   
 }
 .title-wrap{
-  position: absolute; width: 100%; bottom: 12vh; z-index: 2; padding-left:5vw; padding-right:5vw;
+  position: absolute; width: 100%; bottom: 10vh; z-index: 2; padding-left:5vw; padding-right:3vw;
   color: #fff;
   h1{
     font-size: 4.5vw; font-family: $FF_display_serif;
@@ -91,6 +97,11 @@ button { cursor: pointer;}
   &.region {
     bottom: 60px; padding-left: 4vw;
   }
+  &.region-mo {
+    bottom: 100px;
+    .category-title { font-size: 16px;}
+    h1{ font-size: 10vw; width: 90%; }
+  }
 }
 .depth-share-wrap {
   position: absolute;
@@ -101,10 +112,11 @@ button { cursor: pointer;}
       width: 32px; height: 32px; position: absolute; margin: auto; top:0; bottom: 0; left:0; right:0;
       path{ fill: #fff; }
     }
-  }    
+  }
+  &.mo { transform: scale(0.8); bottom:-7rem; left:-20px; }   
 }
 .article-header{
-  position: fixed; width:100%; max-width: 1600px; height: 60px; background-color:#fff;
+  position: fixed; width:100%; height: 60px; background-color:#fff;
   top: -70px; z-index: 10; transition: top 0.25s; z-index: 9999;
   border-bottom: 1px solid #CFCFCF;
   .article-title{
@@ -142,6 +154,7 @@ button { cursor: pointer;}
       background-color: rgba(0,0,0,0.85);
       background-position: center; background-repeat: no-repeat;
       background-size: 60%; background-image: url(../../img/home/keyword_back.png);
+      img { width:175px; float: right;}
     }
     .banner-2{ 
       background-color: #BD1736; background-position: center; background-repeat: no-repeat;
@@ -156,11 +169,11 @@ button { cursor: pointer;}
       width:350px; height: 336px; margin: 0 auto; left:0; right:0; margin-top: 15px;
       .banner-1{
         background-color: #1c1c1c;
-        background-size: 32%; background-position: 40px 50%;
+        background-size: 32%; background-position: 33px 50%;
       }
       .banner-2{
         background-color:#fff; background-image:url(../../img/a_mobile/home_news.png);
-        background-size: 78%; background-position: 30px 50%;
+        background-size: 78%; background-position: 20px 50%;
       }
     }
   }
@@ -196,7 +209,17 @@ button { cursor: pointer;}
     }
   }  
 }
-
+@media all and (max-width:480px){
+  .chosen-wrap {
+    margin: 15rem 0;
+  }
+  .section-title-wrap{ margin-top: 0;
+    .section-title-basic {
+      font-size: 20px; margin-left: 30px; margin-bottom:0; margin-top: 0;
+    }  
+  }
+  .carousel-control-wrap { display: none;}
+}
 #big-card-carousel{
   position: relative; width:100%; overflow: hidden; margin-top: 2rem;
   .card {
@@ -225,7 +248,7 @@ button { cursor: pointer;}
         font-size: 14px; text-transform: uppercase; font-weight: 500;
       }
       .card-title {
-        font-size: 2vw; font-weight: bold; margin-top: 8px; line-height: 1.1em;
+        font-size: 1.8vw; font-weight: bold; margin-top: 8px; line-height: 1.1em;
       }
     }
     .card-detail {
@@ -254,6 +277,11 @@ button { cursor: pointer;}
     .card-back { transform: scale3d(1.2, 1.2, 1); }
     .card-detail { opacity: 1; top: 0;}
   }        
+  }
+}
+@media all and (max-width:480px){
+  #big-card-carousel {
+    margin-top: 1rem;
   }
 }
 #basic-card-carousel, #basic-card-carousel-2{
@@ -319,9 +347,7 @@ button { cursor: pointer;}
   }
 }
 @media all and (max-width:480px){
-  .chosen-wrap{
-    margin: 20rem 0;
-  }
+  .chosen-wrap{ margin: 20rem 0 2rem 0; }
   #big-card-carousel{    
     .card { 
       width:300px; height: 420px;
@@ -334,7 +360,56 @@ button { cursor: pointer;}
         }
       }
     }
-
+  }
+  #basic-card-carousel{
+    margin-top: 1.5rem;
+    .card {
+      width: 300px;
+      .thumb{
+        width:300px;
+      }
+    }
+  }
+  #basic-card-carousel-2{
+    margin-top:1.5rem;
+    .card {
+      width: 150px; height: 180px; margin-top: 0rem; margin-bottom:0;
+      .thumb{ 
+        width: 150px; height: 120px;
+      }
+      .text-wrap{
+        p{
+          width: 90%; font-size: 14px; 
+        }
+      }
+    }
+  }
+  #tour-card-carousel{
+    position: relative; width:100%; margin-top: 1.5rem; overflow: hidden;
+    display: flex; padding-left: 30px;
+    .card-block{
+      display: flex;
+      .card-big {
+        width: 300px; height: 300px; margin-right: 5px; 
+      }
+      .cards-wrap{
+        width: 300px; height: 300px; flex-wrap: wrap;
+        justify-content: space-between; margin-left: 5px;
+        .card {
+          width: 145px; height: 145px;
+          &:nth-child(3), &:nth-child(4){
+            margin-top: 10px;
+          }
+        }
+      }
+    }  
+  }
+  #promo-card-carousel{
+    margin-top: 1.5rem;
+    .card {
+      position: relative; width: 150px;
+      img { max-width:100%; }
+    }
   }
 }
 .section-divide{
@@ -345,8 +420,18 @@ button { cursor: pointer;}
     right:0;
   }
 }
-
-
+@media all and (max-width:480px){
+  .section-divide{
+    margin-top:1rem; margin-bottom:1rem;
+    .section-divide-line {      
+      width: calc(100% - 30px);
+    }
+  }
+}
+#footer-mo {
+  width:100%; margin-bottom: 1rem;
+  img { max-width: 100%; }
+}
 // Destinations -------------- 
 .dest-wrap {
     position: relative; width: 100%; height: 800px; overflow: hidden;
@@ -451,7 +536,7 @@ button { cursor: pointer;}
         position: absolute; width: 1120px; height:630px;
         margin:auto; left:0; right: 0; top:0; bottom:0;
         background-image: url(../../img/basic_a/video_cover.png);
-        background-size: cover; z-index: 10;
+        background-size: cover; z-index: 10; cursor: pointer;
       }
       video{
         position: absolute; width: 1120px; height:630px;
@@ -469,27 +554,55 @@ button { cursor: pointer;}
         @include backImageCover; background-image: url(../../img/basic_a/map_big.png);
       }      
     }
+    .btn-gallery {
+      position: absolute; width:120px; height: 44px; right: 30px; bottom: 30px;
+      color:#fff; background-color: rgba(0,0,0,0.6); line-height: 40px;
+      font-size: 14px; padding:0 1rem; border: 2px solid rgba(255,255,255,0.4);
+      border-radius: 4px; cursor: pointer;
+      background-image:url(../../img/a_depth/btn_expand.png);
+      background-repeat: no-repeat;
+      background-size: 23px 22px; background-position: 86% 50%;
+      &:hover { background-color: rgba(0,0,0,0.9);}
+  }
     .block-basic{
-      position: relative; width:100%; background-color: #fff; padding: 8rem 0 4rem 0;
+      position: relative; width:100%; background-color: #fff; padding: 4rem 0 4rem 0;
       .image-single-wrap{
-        position: relative; width: 100%; max-width:1120px; margin:0 auto;
-        img{ max-width: 100%;}
+        position: relative; width: 100%; max-width:970px; margin:0 auto; height: 574px;
+        @include backImageCover; 
+        &#ulsan-pict-1 { background-image: url(../../img/a_depth/ulsan_gallery_01.jpg); }
+        &#ulsan-pict-2 { background-image: url(../../img/a_depth/ulsan_gallery_02.jpg); }
+        &#ulsan-pict-3 { background-image: url(../../img/a_depth/ulsan_gallery_03.jpg); }
+        &#ulsan-pict-4 { background-image: url(../../img/a_depth/ulsan_gallery_04.jpg); }
+        &#ulsan-pict-5 { background-image: url(../../img/a_depth/ulsan_gallery_05.jpg); }
+        &#ulsan-pict-6 { background-image: url(../../img/a_depth/ulsan_gallery_06.jpg); }
+        &#ulsan-pict-7 { background-image: url(../../img/a_depth/ulsan_gallery_07.jpg); }
+        &#ulsan-pict-8 { background-image: url(../../img/a_depth/ulsan_gallery_08.jpg); }
+        &#ulsan-pict-9 { background-image: url(../../img/a_depth/ulsan_gallery_09.jpg); }
       }
       .text-wrap{
         position: relative; width: 100%; max-width:768px; margin:0 auto;
         .title-sub {
           width:100%; font-family: $FF_display_serif; font-size: 28px; font-weight: 500;
-          letter-spacing: -0.02em; padding: 2rem 0 1rem 0;
+          letter-spacing: -0.02em; padding: 2.5rem 0 1rem 0;
         }
-        p{ font-size:18px; padding: 1rem 0; }
+        p{ 
+          font-size:18px; padding: 1rem 0;
+          &.tip {
+            font-size:14px; line-height: 1.6em; padding:0 0;
+          }
+          &.tip-title {
+            font-size:15px; font-weight: bold; padding:0 0;
+          }
+        }
         .detail-wrap{
           position: relative; width: 100%; height: auto; overflow: hidden;
           transition: all 0.3s;
           .detail-head{
             position: relative; width:100%; margin-top: 1.5rem;
             border-top: 1px solid $color_ui_600; border-bottom: 1px solid $color_ui_600;
+            background-color:#fff;
             p{
-              text-align: left; font-size: 14px; font-weight: 700; padding-left: 1.5rem;
+              text-align: left; font-size: 14px; font-weight: 700; padding-left: 1rem;
             }
             .btn-toggle {
               position: absolute; width:24px; height: 24px; right: 24px; 

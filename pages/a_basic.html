@@ -6,6 +6,7 @@
     <title>Visit Korea</title>
 
     <link href="../libs/aos/aos.css" rel="stylesheet">
+    <link href="../libs/fancybox/jquery.fancybox.css" rel="stylesheet">
     <link href="../libs/styles/common.css" rel="stylesheet">
     <link href="../libs/styles/draft.css" rel="stylesheet">
 
@@ -13,33 +14,34 @@
 
 <body class="basic-type-a-body">
     
-        <div class="header-wrap home">
-            <header>
-                <div class="logo-wrap">
-                    <a href="./a_home.html"></a>
-                </div>
-                <nav class="gnb-menu-wrap">
-                    <a href="#" class="gnb-menu">Destinations</a>
-                    <a href="#" class="gnb-menu">Experiences</a>
-                    <a href="#" class="gnb-menu">Plan Your Trip</a>
-                    <a href="#" class="gnb-menu">Trip Packages</a>               
-                </nav>
-                <div class="menu-wrap">
-                    <a href="" class="search-wrap">
-                        <svg width="56px" height="56px" viewBox="0 0 56 56">                            
-                            <path d="M28.127417,9.83452378 C35.3071187,9.83452378 41.127417,15.654822 41.127417,22.8345238 C41.127417,29.5068599 36.1006556,35.0051331 29.6275739,35.7489022 L29.627417,44.9203102 C29.627417,45.7487373 28.9558441,46.4203102 28.127417,46.4203102 C27.3477209,46.4203102 26.7069683,45.8254221 26.6342836,45.0647702 L26.627417,44.9203102 L26.6282552,35.7490165 C20.1546935,35.0056965 15.127417,29.5072018 15.127417,22.8345238 C15.127417,15.654822 20.9477153,9.83452378 28.127417,9.83452378 Z M28.127417,12.8345238 C22.6045695,12.8345238 18.127417,17.3116763 18.127417,22.8345238 C18.127417,28.3573713 22.6045695,32.8345238 28.127417,32.8345238 C33.6502645,32.8345238 38.127417,28.3573713 38.127417,22.8345238 C38.127417,17.3116763 33.6502645,12.8345238 28.127417,12.8345238 Z" fill-rule="nonzero" transform="translate(28.127417, 28.127417) rotate(-45.000000) translate(-28.127417, -28.127417) "></path>                            
-                        </svg>
-                    </a>
-                    <a href="" class="burger-wrap">
-                        <div class="burger-click-region closing">
-                            <span class="burger-menu-piece"></span>
-                            <span class="burger-menu-piece"></span>
-                            <span class="burger-menu-piece"></span>
-                        </div>
-                    </a>
-                </div>
-            </header>
-        </div>
+    <div class="header-wrap home">
+        <header>
+            <div class="logo-wrap">
+                <a href="./a_home.html"></a>
+            </div>
+            <nav class="gnb-menu-wrap">
+                <a href="#" class="gnb-menu">Destinations</a>
+                <a href="#" class="gnb-menu">Experiences</a>
+                <a href="#" class="gnb-menu">Plan Your Trip</a>
+                <a href="#" class="gnb-menu">Trip Packages</a>               
+            </nav>
+            <div class="menu-wrap">
+                <a href="" class="search-wrap">
+                    <svg width="56px" height="56px" viewBox="0 0 56 56">                            
+                        <path d="M28.127417,9.83452378 C35.3071187,9.83452378 41.127417,15.654822 41.127417,22.8345238 C41.127417,29.5068599 36.1006556,35.0051331 29.6275739,35.7489022 L29.627417,44.9203102 C29.627417,45.7487373 28.9558441,46.4203102 28.127417,46.4203102 C27.3477209,46.4203102 26.7069683,45.8254221 26.6342836,45.0647702 L26.627417,44.9203102 L26.6282552,35.7490165 C20.1546935,35.0056965 15.127417,29.5072018 15.127417,22.8345238 C15.127417,15.654822 20.9477153,9.83452378 28.127417,9.83452378 Z M28.127417,12.8345238 C22.6045695,12.8345238 18.127417,17.3116763 18.127417,22.8345238 C18.127417,28.3573713 22.6045695,32.8345238 28.127417,32.8345238 C33.6502645,32.8345238 38.127417,28.3573713 38.127417,22.8345238 C38.127417,17.3116763 33.6502645,12.8345238 28.127417,12.8345238 Z" fill-rule="nonzero" transform="translate(28.127417, 28.127417) rotate(-45.000000) translate(-28.127417, -28.127417) "></path>                            
+                    </svg>
+                </a>
+                <a href="" class="burger-wrap">
+                    <div class="burger-click-region closing">
+                        <span class="burger-menu-piece"></span>
+                        <span class="burger-menu-piece"></span>
+                        <span class="burger-menu-piece"></span>
+                    </div>
+                </a>
+            </div>
+        </header>
+    </div>
+
     <div class="article-header">
         <p class="article-title">On the Road in Ulsan</p>
         <div class="share-wrap">
@@ -60,6 +62,7 @@
             </a>
         </div>
     </div>
+
     <div class="full-video-wrap">        
         <span class="video-overlay"></span>
         <video src="../video/ulsan_1.mp4" class="full-video" muted autoplay loop></video>
@@ -85,8 +88,11 @@
             </div>
         </div>
     </div>
+
     <span class="overlay-fixed"></span>
+
 	<div class="content-wrap">
+
         <div class="wrap-intro">
             <div class="wrap-1" data-aos="fade-up" data-aos-id="opacity_1">
                 <div class="map-wrap">
@@ -105,8 +111,8 @@
         </div>
 
         <div class="wrap-video" data-aos="fade-up" data-aos-id="opacity_2">
-            <div class="video-cover"></div>
-            <video src="../video/ulsan_1.mp4" muted loop></video>
+            <div class="video-cover" id="video-cover"></div>
+            <video src="../video/ulsan_1.mp4" muted loop id="ulsan-video"></video>
         </div>
 
         <section class="wrap-map">
@@ -116,18 +122,18 @@
             <div class="map"></div>
         </section>
 
-        <section class="block-basic">
-            <div class="image-single-wrap">
-                <img src="../img/basic_a/pict_1.png">
+        <section class="block-basic" style="padding-top: 10rem;">
+            <div class="image-single-wrap" id="ulsan-pict-1">
+                <a class="btn-gallery">Gallery</a>
             </div>
             <div class="text-wrap">
-                <h4 class="title-sub">Ulsan Station</h4>
+                <h4 class="title-sub">Daewangam Park</h4>
                 <p>
-                    Ulsan Station is the sixth busiest KTX station on the Gyeongbu Line behind Seoul, 
-                    Busan, Dong Daegu, Daejeon, and Gwangmyeong. When you arrive at Ulsan Station, 
-                    a whale sculpture, a symbol of the city, can be seen. Even though the station is 
-                    on the outskirts of the city, getting to downtown and major attractions is possible 
-                    using public transportation including limousine buses, city buses and taxis.
+                    Daewangam Park, one of 12 must-go attractions of Ulsan, greets visitors with more than 15,000 
+                    pine trees that are over 100 years old. The pine forest path to Daewangam offers a 
+                    mythical-like atmosphere surrounded by pine trees, while the coastal path to 
+                    Seuldo Island offers a stunning view of the ocean and weathered rocks carved into 
+                    interesting shapes. The path that leads to Ulgi Lighthouse is also worth a walk.
                 </p>
                 <div class="detail-wrap">
                     <button class="detail-head">
@@ -157,17 +163,23 @@
         </section>
 
         <section class="block-basic">
-            <div class="image-single-wrap">
-                <img src="../img/basic_a/pict_1.png">
+            <div class="image-single-wrap" id="ulsan-pict-2">
+                <a class="btn-gallery">Gallery</a>
             </div>
             <div class="text-wrap">
-                <h4 class="title-sub">Ulsan Station</h4>
+                <h4 class="title-sub">Taehwagang National Garden & Simni Bamboo Grove</h4>
                 <p>
-                    Ulsan Station is the sixth busiest KTX station on the Gyeongbu Line behind Seoul, 
-                    Busan, Dong Daegu, Daejeon, and Gwangmyeong. When you arrive at Ulsan Station, 
-                    a whale sculpture, a symbol of the city, can be seen. Even though the station is 
-                    on the outskirts of the city, getting to downtown and major attractions is possible 
-                    using public transportation including limousine buses, city buses and taxis.
+                    Designated as a National Garden in July 2019, Taehwagang National Garden is 
+                    the second national garden following Suncheonman Bay National Garden. 
+                    The garden offers various attractions such as the bamboo grove walking path, 
+                    bamboo ecology institute, a small stream, flower garden and more. Chosen by 
+                    the Ministry of Environment as one of the 26 must-visit ecology attractions, 
+                    Taehwagang National Garden was also chosen by Korea Tourism Organization as 
+                    one of the 100 must-go places in Korea. Located in the western section of 
+                    the garden, Simni Bamboo Grove, a 4.3 kilometer stretch of bamboo forest 
+                    is definitely worth a look. Also, if you go across Taehwagang River to 
+                    Taehwagang Observatory, you can see an amazing panoramic view of the 
+                    garden and the bamboo grove.
                 </p>
                 <div class="detail-wrap">
                     <button class="detail-head">
@@ -194,12 +206,154 @@
                     </div>
                 </div>
             </div>
-        </section>
-        
+        </section><!-- end 2 -->
+
+        <section class="block-basic">
+            <div class="image-single-wrap" id="ulsan-pict-4">
+                <a class="btn-gallery">Gallery</a>
+            </div>
+            <div class="text-wrap">
+                <h4 class="title-sub">Eonyang Hanu Bulgogi</h4>
+                <p>
+                    The areas of Eonyang and Bonggye, categorized as the only Hanu Bulgogi Special Zone in Korea, 
+                    use top grade hanu beef from cows aged 3-4 years. The area has always been known for 
+                    its livestock industry due to having the ideal environment to raise animals. 
+                    A very light marinade is used to bring out the soft and chewy traditional taste of 
+                    hanu, making hanu bulgogi in this region unbeatable.
+                </p>
+                <p class="tip">
+                    <p class="tip-title">Best way to eat Eonyang hanu bulgogi!</p>
+                    Even though eating hanu bulgogi plain is good, the taste can be improved with some tips. 
+                    First, don’t cut the meat until you are ready to eat it as the juice and freshness 
+                    decrease if the meat is cut too early. Second, fat is the key to flavor. If bulgogi 
+                    only has meat, it might become very dry after cooking, so just the right amount of 
+                    fat will add to the flavor. Last, don’t flip the meat too often. If you flip the 
+                    meat too much, the juice will drip away leaving the meat dry, Only flip once when 
+                    you see the juice come up to the surface and serve when it is finished cooking.
+                </p>
+                <div class="detail-wrap">
+                    <button class="detail-head">
+                        <p>Detail information</p>
+                        <span class="btn-toggle"></span>
+                    </button>
+                    <div class="detail-body">
+                        <div class="table-wrap">
+                            <table>
+                                <tr>
+                                    <td class="item">Adress</td>
+                                    <td class="desc">177, Ulsanyeok-ro, Ulju-gun, Ulsan (울산광역시 울주군 삼남면 울산역로 177)</td>
+                                </tr>
+                                <tr>
+                                    <td class="item">Adress</td>
+                                    <td class="desc">Restaurants, convenience store, lockers, lost & found, parking lot, etc.</td>
+                                </tr>
+                                <tr>
+                                    <td class="item">Adress</td>
+                                    <td class="desc">+82-1544-7788 (Korean, English)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- end 3 -->
+
+        <section class="block-basic">
+            <div class="image-single-wrap" id="ulsan-pict-6">
+                <a class="btn-gallery">Gallery</a>
+            </div>
+            <div class="text-wrap">
+                <h4 class="title-sub">Ulsandaegyo Observatory</h4>
+                <p>
+                    A perfect way to end a trip to Ulsan is to see Ulsan’s nightscape at Ulsandaegyo 
+                    Observatory. Visitors can see a view of Ulsan’s three major industry facilities 
+                    related to petrochemical engineering, automobile, and shipbuilding as well as 
+                    the whole city. The most noticeable view from the observatory, Ulsandaegyo Bridge, 
+                    is a 1,800-meter long suspension bridge that opened on June 1, 2015.
+                </p>
+                <div class="detail-wrap">
+                    <button class="detail-head">
+                        <p>Detail information</p>
+                        <span class="btn-toggle"></span>
+                    </button>
+                    <div class="detail-body">
+                        <div class="table-wrap">
+                            <table>
+                                <tr>
+                                    <td class="item">Adress</td>
+                                    <td class="desc">177, Ulsanyeok-ro, Ulju-gun, Ulsan (울산광역시 울주군 삼남면 울산역로 177)</td>
+                                </tr>
+                                <tr>
+                                    <td class="item">Adress</td>
+                                    <td class="desc">Restaurants, convenience store, lockers, lost & found, parking lot, etc.</td>
+                                </tr>
+                                <tr>
+                                    <td class="item">Adress</td>
+                                    <td class="desc">+82-1544-7788 (Korean, English)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- end 4 -->
+
+        <section class="block-basic">
+            <div class="image-single-wrap" id="ulsan-pict-8">
+                <a class="btn-gallery">Gallery</a>
+            </div>
+            <div class="text-wrap">
+                <h4 class="title-sub">Jangsaengpo Whale Culture Zone</h4>
+                <p>
+                    Jangsaengpo Whale Culture Zone offers visitors a cultural area to understand more about whales, 
+                    a symbol of Ulsan. The culture zone offers various attractions such as Jangsaengpo Whale Museum, 
+                    Jangsaengpo Whale Experience Hall, Jangsaengpo Whale Culture Village, Jangsaengpo Whale 
+                    Watching Cruise, Ulsan Battleship, 5D theater, JSP Whally Kids Land and more. For those 
+                    who would like to tour around the culture zone with ease, Jangsaengpo Monorail offers a 
+                    full view of the surrounding area, including the culture village, Ulsan Bridge, Ulsan 
+                    industrial zone and more. With a height of 3-5 meters off the ground, the 1.3 kilometer 
+                    long monorail track starts from the Whale Museum and goes around the Jangsaengpo Whale 
+                    Culture Village and 5D theater, before coming back around to the museum.
+                </p>
+                <div class="detail-wrap">
+                    <button class="detail-head">
+                        <p>Detail information</p>
+                        <span class="btn-toggle"></span>
+                    </button>
+                    <div class="detail-body">
+                        <div class="table-wrap">
+                            <table>
+                                <tr>
+                                    <td class="item">Adress</td>
+                                    <td class="desc">177, Ulsanyeok-ro, Ulju-gun, Ulsan (울산광역시 울주군 삼남면 울산역로 177)</td>
+                                </tr>
+                                <tr>
+                                    <td class="item">Adress</td>
+                                    <td class="desc">Restaurants, convenience store, lockers, lost & found, parking lot, etc.</td>
+                                </tr>
+                                <tr>
+                                    <td class="item">Adress</td>
+                                    <td class="desc">+82-1544-7788 (Korean, English)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- end 5 -->
+       
     </div>
+
+    <footer id="footer" style="margin-top: 100vh; background-color: #fff;">
+        <div class="banner">
+            <img src="../img/home/footer_banner.png">
+        </div>
+        <img src="../img/home/footer.png" class="footer-content">
+    </footer>
 
 	<script type="text/javascript" src="../libs/jquery/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../libs/aos/aos.js"></script>
+    <script type="text/javascript" src="../libs/fancybox/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="../pages/js/draft.js"></script>
 
 	<script>
@@ -220,6 +374,76 @@
         document.addEventListener('aos:out:opacity_2', ({ detail }) => {
             $('.overlay-fixed').css('opacity','0.95');
             $('.overlay-fixed').css('background-color','#0C131F');
+        });
+
+        $('.video-cover').on('click', function(){
+            $(this).css('display','none');
+            $('#ulsan-video').get(0).play();
+        });
+
+        $(".btn-gallery").on('click', function() {
+
+        $.fancybox.open([
+            {
+                src  : '../img/a_depth/ulsan_gallery_01.jpg',
+                opts : {
+                thumb   : '../img/a_depth/ulsan_gallery_01_t.jpg'
+                }
+            },
+            {
+                src  : '../img/a_depth/ulsan_gallery_02.jpg',
+                opts : {
+                thumb   : '../img/a_depth/ulsan_gallery_02_t.jpg'
+                }
+            },
+            {
+                src  : '../img/a_depth/ulsan_gallery_03.jpg',
+                opts : {
+                thumb   : '../img/a_depth/ulsan_gallery_03_t.jpg'
+                }
+            },
+            {
+                src  : '../img/a_depth/ulsan_gallery_04.jpg',
+                opts : {
+                thumb   : '../img/a_depth/ulsan_gallery_04_t.jpg'
+                }
+            },
+            {
+                src  : '../img/a_depth/ulsan_gallery_05.jpg',
+                opts : {
+                thumb   : '../img/a_depth/ulsan_gallery_05_t.jpg'
+                }
+            },
+            {
+                src  : '../img/a_depth/ulsan_gallery_06.jpg',
+                opts : {
+                thumb   : '../img/a_depth/ulsan_gallery_06_t.jpg'
+                }
+            },
+            {
+                src  : '../img/a_depth/ulsan_gallery_07.jpg',
+                opts : {
+                thumb   : '../img/a_depth/ulsan_gallery_07_t.jpg'
+                }
+            },
+            {
+                src  : '../img/a_depth/ulsan_gallery_08.jpg',
+                opts : {
+                thumb   : '../img/a_depth/ulsan_gallery_08_t.jpg'
+                }
+            },
+            {
+                src  : '../img/a_depth/ulsan_gallery_09.jpg',
+                opts : {
+                thumb   : '../img/a_depth/ulsan_gallery_09_t.jpg'
+                }
+            }
+            ], {
+            loop : true,
+            thumbs : {
+                autoStart : true
+            }
+            });
         });
         
 	</script>

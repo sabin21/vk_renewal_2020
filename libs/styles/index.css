@@ -1,6 +1,11 @@
+html {
+  height: 100%;
+}
+
 body {
   background-color: #2A3139;
   font-family: "IBM Plex Sans";
+  height: 100%;
 }
 
 body:before {
@@ -15,21 +20,68 @@ body:before {
 .wrap-index {
   position: relative;
   width: 100%;
-  min-height: 150vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  min-height: 300vh;
+  overflow: hidden;
 }
 
-.wrap-index .left-bar {
-  position: fixed;
+.wrap-index .concept-wrap {
+  position: absolute;
+  width: calc(100% + 72px);
+  height: 100%;
+  background-color: #F2F4F4;
+  z-index: 10;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  left: -100%;
+}
+
+.wrap-index .concept-wrap .concept-inner-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  text-align: center;
+}
+
+.wrap-index .concept-wrap .concept-inner-wrap .inin {
+  position: relative;
+  width: 100%;
+  height: 1800px;
+}
+
+.wrap-index .concept-wrap .concept-inner-wrap .inin img {
+  width: 100%;
+  max-width: 1600px;
+}
+
+.wrap-index .concept-wrap .concept-inner-wrap span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  line-height: 0;
+}
+
+.wrap-index .concept-wrap .concept-inner-wrap p {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.wrap-index .concept-wrap .left-bar {
+  position: absolute;
   width: 72px;
   height: 100%;
+  right: 0;
+  top: 0;
   background-color: #fff;
-  z-index: 10;
+  cursor: pointer;
+  z-index: 20;
 }
 
-.wrap-index .left-bar .title {
+.wrap-index .concept-wrap .left-bar .title {
   position: absolute;
   height: 20px;
   width: 100vh;
@@ -40,7 +92,21 @@ body:before {
   -webkit-transform: rotateZ(90deg);
           transform: rotateZ(90deg);
   left: 50px;
-  top: 30px;
+  top: 100px;
+}
+
+.wrap-index .concept-wrap .btn-concept-close {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  right: 96px;
+  top: 24px;
+  cursor: pointer;
+  z-index: 30;
+}
+
+.wrap-index .concept-wrap .btn-concept-close img {
+  max-width: 100%;
 }
 
 .wrap-index .inner-wrap {
@@ -64,7 +130,7 @@ body:before {
 
 .wrap-index .inner-wrap .title-wrap h1 {
   color: #fff;
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: bold;
   margin-top: 5rem;
 }
@@ -96,9 +162,10 @@ body:before {
 .wrap-index .inner-wrap .content-wrap .card-wrap .card {
   width: 100%;
   height: auto;
-  min-height: 340px;
+  min-height: 337px;
   overflow: hidden;
   background-color: gray;
+  background-size: cover;
 }
 
 .wrap-index .inner-wrap .content-wrap .card-wrap p {
@@ -148,5 +215,9 @@ body:before {
   color: #fff;
   font-size: 16px;
   line-height: 40px;
+}
+
+.wrap-index .inner-wrap .links-wrap ul li a.dimmed {
+  color: #000;
 }
 /*# sourceMappingURL=index.css.map */

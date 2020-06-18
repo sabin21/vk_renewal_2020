@@ -16,19 +16,20 @@ for (var i = 0; i < acc.length; i++) {
 var filterWrap = document.querySelector('.filter-wrap');
 var filterOpen = document.querySelector('.btn-filter');
 var filterClose = document.querySelector('.filter-btn-close');
-$('.btn-filter').on('click', function(){
-  event.preventDefault();
-  $('.filter-wrap').css('display', 'block');
-});
-$('.filter-btn-close').on('click', function(){
-  event.preventDefault();
-  $('.filter-wrap').css('top','-200px');
-  setTimeout(function(){
-    $('.filter-wrap').css('display', 'none');
-  }, 300);
-  
-  
-});
+if ($('body').hasClass('desktop')){
+  $('.btn-filter').on('click', function(){
+    event.preventDefault();
+    $('.filter-wrap').css('display', 'block');
+  });
+  $('.filter-btn-close').on('click', function(){
+    event.preventDefault();
+    $('.filter-wrap').css('top','-200px');
+    setTimeout(function(){
+      $('.filter-wrap').css('display', 'none');
+    }, 300);  
+  });
+}
+
   
 
 $(document).on('scroll', function(){

@@ -322,6 +322,26 @@
   background-color: #fff;
 }
 
+.header-wrap.mo {
+  height: 54px;
+}
+
+.header-wrap.mo .logo-wrap {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  top: 14px;
+  left: 18px;
+}
+
+.header-wrap.mo .menu-wrap {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  right: 2px;
+  top: -8px;
+}
+
 body {
   font-family: "IBM Plex sans","Noto KR sans";
 }
@@ -341,9 +361,13 @@ button {
 .wrap {
   position: relative;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1920px;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.wrap.full {
+  max-width: 100%;
 }
 
 #footer {
@@ -428,6 +452,11 @@ button {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 15%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.7) 100%);
 }
 
+.full-video-wrap.desti-mo {
+  height: 100vh;
+  max-height: 680px;
+}
+
 .inner-wrap {
   position: relative;
   width: 100%;
@@ -459,10 +488,10 @@ button {
 .title-wrap {
   position: absolute;
   width: 100%;
-  bottom: 12vh;
+  bottom: 10vh;
   z-index: 2;
   padding-left: 5vw;
-  padding-right: 5vw;
+  padding-right: 3vw;
   color: #fff;
 }
 
@@ -495,6 +524,19 @@ button {
   padding-left: 4vw;
 }
 
+.title-wrap.region-mo {
+  bottom: 100px;
+}
+
+.title-wrap.region-mo .category-title {
+  font-size: 16px;
+}
+
+.title-wrap.region-mo h1 {
+  font-size: 10vw;
+  width: 90%;
+}
+
 .depth-share-wrap {
   position: absolute;
 }
@@ -525,10 +567,16 @@ button {
   fill: #fff;
 }
 
+.depth-share-wrap.mo {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  bottom: -7rem;
+  left: -20px;
+}
+
 .article-header {
   position: fixed;
   width: 100%;
-  max-width: 1600px;
   height: 60px;
   background-color: #fff;
   top: -70px;
@@ -636,6 +684,11 @@ button {
   background-image: url(../../img/home/keyword_back.png);
 }
 
+.banner-outer .banner-wrap .banner-1 img {
+  width: 175px;
+  float: right;
+}
+
 .banner-outer .banner-wrap .banner-2 {
   background-color: #BD1736;
   background-position: center;
@@ -660,13 +713,13 @@ button {
   .banner-outer .banner-wrap .banner-1 {
     background-color: #1c1c1c;
     background-size: 32%;
-    background-position: 40px 50%;
+    background-position: 33px 50%;
   }
   .banner-outer .banner-wrap .banner-2 {
     background-color: #fff;
     background-image: url(../../img/a_mobile/home_news.png);
     background-size: 78%;
-    background-position: 30px 50%;
+    background-position: 20px 50%;
   }
 }
 
@@ -745,6 +798,24 @@ button {
   margin: -1px 0 0 5px;
   -webkit-transform: scale(0.6);
           transform: scale(0.6);
+}
+
+@media all and (max-width: 480px) {
+  .chosen-wrap {
+    margin: 15rem 0;
+  }
+  .section-title-wrap {
+    margin-top: 0;
+  }
+  .section-title-wrap .section-title-basic {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .carousel-control-wrap {
+    display: none;
+  }
 }
 
 #big-card-carousel {
@@ -837,7 +908,7 @@ button {
 }
 
 #big-card-carousel .card .text-wrap .card-title {
-  font-size: 2vw;
+  font-size: 1.8vw;
   font-weight: bold;
   margin-top: 8px;
   line-height: 1.1em;
@@ -912,6 +983,12 @@ button {
 #big-card-carousel .card:hover .card-detail {
   opacity: 1;
   top: 0;
+}
+
+@media all and (max-width: 480px) {
+  #big-card-carousel {
+    margin-top: 1rem;
+  }
 }
 
 #basic-card-carousel, #basic-card-carousel-2 {
@@ -1078,7 +1155,7 @@ button {
 
 @media all and (max-width: 480px) {
   .chosen-wrap {
-    margin: 20rem 0;
+    margin: 20rem 0 2rem 0;
   }
   #big-card-carousel .card {
     width: 300px;
@@ -1089,6 +1166,79 @@ button {
   }
   #big-card-carousel .card .text-wrap .card-title {
     font-size: 8vw;
+  }
+  #basic-card-carousel {
+    margin-top: 1.5rem;
+  }
+  #basic-card-carousel .card {
+    width: 300px;
+  }
+  #basic-card-carousel .card .thumb {
+    width: 300px;
+  }
+  #basic-card-carousel-2 {
+    margin-top: 1.5rem;
+  }
+  #basic-card-carousel-2 .card {
+    width: 150px;
+    height: 180px;
+    margin-top: 0rem;
+    margin-bottom: 0;
+  }
+  #basic-card-carousel-2 .card .thumb {
+    width: 150px;
+    height: 120px;
+  }
+  #basic-card-carousel-2 .card .text-wrap p {
+    width: 90%;
+    font-size: 14px;
+  }
+  #tour-card-carousel {
+    position: relative;
+    width: 100%;
+    margin-top: 1.5rem;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 30px;
+  }
+  #tour-card-carousel .card-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #tour-card-carousel .card-block .card-big {
+    width: 300px;
+    height: 300px;
+    margin-right: 5px;
+  }
+  #tour-card-carousel .card-block .cards-wrap {
+    width: 300px;
+    height: 300px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 5px;
+  }
+  #tour-card-carousel .card-block .cards-wrap .card {
+    width: 145px;
+    height: 145px;
+  }
+  #tour-card-carousel .card-block .cards-wrap .card:nth-child(3), #tour-card-carousel .card-block .cards-wrap .card:nth-child(4) {
+    margin-top: 10px;
+  }
+  #promo-card-carousel {
+    margin-top: 1.5rem;
+  }
+  #promo-card-carousel .card {
+    position: relative;
+    width: 150px;
+  }
+  #promo-card-carousel .card img {
+    max-width: 100%;
   }
 }
 
@@ -1106,6 +1256,25 @@ button {
   height: 1px;
   background-color: #D9DBE0;
   right: 0;
+}
+
+@media all and (max-width: 480px) {
+  .section-divide {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .section-divide .section-divide-line {
+    width: calc(100% - 30px);
+  }
+}
+
+#footer-mo {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#footer-mo img {
+  max-width: 100%;
 }
 
 .dest-wrap {
@@ -1310,6 +1479,7 @@ button {
   background-image: url(../../img/basic_a/video_cover.png);
   background-size: cover;
   z-index: 10;
+  cursor: pointer;
 }
 
 .basic-type-a-body .content-wrap .wrap-video video {
@@ -1352,22 +1522,82 @@ button {
   background-image: url(../../img/basic_a/map_big.png);
 }
 
+.basic-type-a-body .content-wrap .btn-gallery {
+  position: absolute;
+  width: 120px;
+  height: 44px;
+  right: 30px;
+  bottom: 30px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  line-height: 40px;
+  font-size: 14px;
+  padding: 0 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  cursor: pointer;
+  background-image: url(../../img/a_depth/btn_expand.png);
+  background-repeat: no-repeat;
+  background-size: 23px 22px;
+  background-position: 86% 50%;
+}
+
+.basic-type-a-body .content-wrap .btn-gallery:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 .basic-type-a-body .content-wrap .block-basic {
   position: relative;
   width: 100%;
   background-color: #fff;
-  padding: 8rem 0 4rem 0;
+  padding: 4rem 0 4rem 0;
 }
 
 .basic-type-a-body .content-wrap .block-basic .image-single-wrap {
   position: relative;
   width: 100%;
-  max-width: 1120px;
+  max-width: 970px;
   margin: 0 auto;
+  height: 574px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.basic-type-a-body .content-wrap .block-basic .image-single-wrap img {
-  max-width: 100%;
+.basic-type-a-body .content-wrap .block-basic .image-single-wrap#ulsan-pict-1 {
+  background-image: url(../../img/a_depth/ulsan_gallery_01.jpg);
+}
+
+.basic-type-a-body .content-wrap .block-basic .image-single-wrap#ulsan-pict-2 {
+  background-image: url(../../img/a_depth/ulsan_gallery_02.jpg);
+}
+
+.basic-type-a-body .content-wrap .block-basic .image-single-wrap#ulsan-pict-3 {
+  background-image: url(../../img/a_depth/ulsan_gallery_03.jpg);
+}
+
+.basic-type-a-body .content-wrap .block-basic .image-single-wrap#ulsan-pict-4 {
+  background-image: url(../../img/a_depth/ulsan_gallery_04.jpg);
+}
+
+.basic-type-a-body .content-wrap .block-basic .image-single-wrap#ulsan-pict-5 {
+  background-image: url(../../img/a_depth/ulsan_gallery_05.jpg);
+}
+
+.basic-type-a-body .content-wrap .block-basic .image-single-wrap#ulsan-pict-6 {
+  background-image: url(../../img/a_depth/ulsan_gallery_06.jpg);
+}
+
+.basic-type-a-body .content-wrap .block-basic .image-single-wrap#ulsan-pict-7 {
+  background-image: url(../../img/a_depth/ulsan_gallery_07.jpg);
+}
+
+.basic-type-a-body .content-wrap .block-basic .image-single-wrap#ulsan-pict-8 {
+  background-image: url(../../img/a_depth/ulsan_gallery_08.jpg);
+}
+
+.basic-type-a-body .content-wrap .block-basic .image-single-wrap#ulsan-pict-9 {
+  background-image: url(../../img/a_depth/ulsan_gallery_09.jpg);
 }
 
 .basic-type-a-body .content-wrap .block-basic .text-wrap {
@@ -1383,12 +1613,24 @@ button {
   font-size: 28px;
   font-weight: 500;
   letter-spacing: -0.02em;
-  padding: 2rem 0 1rem 0;
+  padding: 2.5rem 0 1rem 0;
 }
 
 .basic-type-a-body .content-wrap .block-basic .text-wrap p {
   font-size: 18px;
   padding: 1rem 0;
+}
+
+.basic-type-a-body .content-wrap .block-basic .text-wrap p.tip {
+  font-size: 14px;
+  line-height: 1.6em;
+  padding: 0 0;
+}
+
+.basic-type-a-body .content-wrap .block-basic .text-wrap p.tip-title {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 0;
 }
 
 .basic-type-a-body .content-wrap .block-basic .text-wrap .detail-wrap {
@@ -1406,13 +1648,14 @@ button {
   margin-top: 1.5rem;
   border-top: 1px solid #D3DADF;
   border-bottom: 1px solid #D3DADF;
+  background-color: #fff;
 }
 
 .basic-type-a-body .content-wrap .block-basic .text-wrap .detail-wrap .detail-head p {
   text-align: left;
   font-size: 14px;
   font-weight: 700;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
 }
 
 .basic-type-a-body .content-wrap .block-basic .text-wrap .detail-wrap .detail-head .btn-toggle {

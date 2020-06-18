@@ -4,6 +4,7 @@ body {
 
 body.home {
   background-color: #1A1C1D;
+  min-height: 200vh;
 }
 
 button, input {
@@ -21,6 +22,7 @@ button {
 .wrap {
   position: relative;
   width: 100%;
+  min-height: 100vh;
 }
 
 #footer {
@@ -159,6 +161,55 @@ button {
   background-image: url(../../img/b_header_icon_mypage_2.png);
 }
 
+.header-wrap.mo {
+  height: 54px;
+}
+
+.header-wrap.mo .logo-wrap {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  top: 13px;
+  left: 16px;
+}
+
+.header-wrap.mo .menu-wrap {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  right: 2px;
+  top: -8px;
+}
+
+.header-wrap.mo .action-wrap {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  top: 7px;
+  right: 2px;
+}
+
+.header-wrap.mo .action-wrap .btn-filter, .header-wrap.mo .action-wrap .btn-search, .header-wrap.mo .action-wrap .btn-mypage {
+  margin-left: 6px;
+}
+
+.header-wrap.mo .action-wrap .burger {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.header-wrap.mo .action-wrap .burger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  margin: 6px auto;
+}
+
+.header-wrap.mo .action-wrap .burger span:nth-child(1) {
+  margin-top: 10px;
+}
+
 .hero-container {
   position: absolute;
   width: 100%;
@@ -272,11 +323,57 @@ button {
   width: 100%;
 }
 
+.hero-container .title-wrap.mo {
+  width: 80%;
+  height: auto;
+  bottom: 100px;
+  left: 30px;
+}
+
+.hero-container .title-wrap.mo .category-title {
+  font-size: 16px;
+}
+
+.hero-container .title-wrap.mo h1 {
+  width: 100%;
+  font-size: 9.5vw;
+}
+
+@media all and (max-width: 480px) {
+  .hero-container {
+    height: 560px;
+  }
+  .hero-container .title-wrap {
+    padding-left: 0;
+    padding-right: 0;
+    bottom: auto;
+    top: 170px;
+  }
+  .hero-container .title-wrap.default {
+    width: 100%;
+  }
+  .hero-container .title-wrap.default h1 {
+    font-size: 7vw;
+    width: 100%;
+  }
+  .hero-container .title-wrap.mo {
+    top: 300px;
+  }
+}
+
 .contents-wrap {
   position: absolute;
   width: 100%;
   z-index: 5;
   top: 620px;
+}
+
+.contents-wrap.mo {
+  top: 480px;
+}
+
+.contents-wrap.mo .content-full {
+  width: 570px;
 }
 
 .contents-wrap2 {
@@ -584,6 +681,66 @@ button {
 
 .slider-frame .slider-container .slide .slide-inner .thumb#tour2-thumb-15 {
   background-image: url(../../img/thumbs/tours2_15.png);
+}
+
+.slider-frame .slider-container .slide .slide-inner .thumb#gangneung-1 {
+  background-image: url(../../img/thumbs/gangneung_1.png);
+}
+
+.slider-frame .slider-container .slide .slide-inner .thumb#gangneung-2 {
+  background-image: url(../../img/thumbs/gangneung_2.png);
+}
+
+.slider-frame .slider-container .slide .slide-inner .thumb#gangneung-3 {
+  background-image: url(../../img/thumbs/gangneung_3.png);
+}
+
+.slider-frame .slider-container .slide .slide-inner .thumb#gangneung-4 {
+  background-image: url(../../img/thumbs/gangneung_4.png);
+}
+
+.slider-frame .slider-container .slide .slide-inner .thumb#gangneung-5 {
+  background-image: url(../../img/thumbs/gangneung_5.png);
+}
+
+.slider-frame .slider-container .slide .slide-inner .thumb#busan-1 {
+  background-image: url(../../img/thumbs/busan_1.png);
+}
+
+.slider-frame .slider-container .slide .slide-inner .thumb#busan-2 {
+  background-image: url(../../img/thumbs/busan_2.png);
+}
+
+.slider-frame .slider-container .slide .slide-inner .thumb#busan-3 {
+  background-image: url(../../img/thumbs/busan_3.png);
+}
+
+.slider-frame .slider-container .slide .slide-inner .thumb#busan-4 {
+  background-image: url(../../img/thumbs/busan_4.png);
+}
+
+.slider-frame .slider-container .slide .slide-inner .thumb#busan-5 {
+  background-image: url(../../img/thumbs/busan_5.png);
+}
+
+.slider-frame .slider-container .slide .slide-inner .thumb#jeonju-1 {
+  background-image: url(../../img/thumbs/junju_1.png);
+}
+
+.slider-frame .slider-container .slide .slide-inner .thumb#jeonju-2 {
+  background-image: url(../../img/thumbs/junju_2.png);
+}
+
+.slider-frame .slider-container .slide .slide-inner .thumb#jeonju-3 {
+  background-image: url(../../img/thumbs/junju_3.png);
+}
+
+.slider-frame .slider-container .slide .slide-inner .thumb#jeonju-4 {
+  background-image: url(../../img/thumbs/junju_4.png);
+}
+
+.slider-frame .slider-container .slide .slide-inner .thumb#jeonju-5 {
+  background-image: url(../../img/thumbs/junju_5.png);
 }
 
 .slider-frame .slider-container .slide .slide-inner .thumb .card-ranking {

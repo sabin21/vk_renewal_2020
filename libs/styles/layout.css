@@ -1,5 +1,4 @@
 /*=================*/
-/*=================*/
 .mobile-sample {
   background-color: #a3a5ab;
 }
@@ -36,6 +35,11 @@ iframe.screen-wrap {
 }
 
 /*=================*/
+.mo-page {
+  -ms-overflow-style: none;
+  overflow: auto;
+}
+
 .mo-page::-webkit-scrollbar {
   width: 0px;
 }
